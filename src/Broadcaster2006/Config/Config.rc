@@ -1,0 +1,374 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Config"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Config Version 5.1",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 Audio Broadcast Software System",IDC_STATIC,40,22,177,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Build 101",IDC_STATIC,40,34,177,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,1,0,101
+ PRODUCTVERSION 5,1,0,101
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Config MFC Application"
+            VALUE "FileVersion", "5, 1, 0, 101"
+            VALUE "InternalName", "Config"
+            VALUE "LegalCopyright", "Copyright (C) 2004 Audio Broacast Software System"
+            VALUE "OriginalFilename", "Config.EXE"
+            VALUE "ProductName", "DigitalRM Config"
+            VALUE "ProductVersion", "5, 1, 0, 101"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG_DIALOG DIALOGEX 0, 0, 320, 366
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Configuracao Audio"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_AUDIOMUSICA,84,7,229,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Musica:",IDC_STATIC,7,7,68,14,SS_CENTERIMAGE
+    RTEXT           "Monição",IDC_STATIC,7,22,68,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_AUDIOMONICAO,84,22,229,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CARTWALL,84,36,229,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GRAVACAOTAKES,84,62,222,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Cartwall:",IDC_STATIC,7,36,68,14,SS_CENTERIMAGE
+    RTEXT           "Entrada:",IDC_STATIC,15,62,60,12,SS_CENTERIMAGE
+    RTEXT           "IIS (URL)",IDC_STATIC,7,175,68,14,SS_CENTERIMAGE
+    RTEXT           "Saída para TAKE",IDC_STATIC,7,114,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_URL,84,175,229,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_FADE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,114,174,15
+    CONTROL         "Slider1",IDC_ONINTRO,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,131,174,15
+    RTEXT           "Intro c/ TAKE",IDC_STATIC,7,131,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_VALOR1,261,114,52,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_VALOR2,261,131,52,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Pasta TEMP",IDC_STATIC,7,195,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TEMP,84,195,229,14,ES_AUTOHSCROLL
+    GROUPBOX        "Gravação",IDC_STATIC,7,53,306,57
+    COMBOBOX        IDC_FORMAT,84,76,222,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PARAM,84,91,222,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Formato:",IDC_STATIC,15,76,60,12,SS_CENTERIMAGE
+    RTEXT           "Parametros:",IDC_STATIC,24,91,51,12,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLOW,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,224,174,15
+    CONTROL         "Slider1",IDC_SLOWAVG,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,241,174,15
+    CONTROL         "Slider1",IDC_AVG,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,259,174,15
+    EDITTEXT        IDC_SLOWV,262,224,45,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SLOWAVGV,261,241,45,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AVGV,261,259,45,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Lento",IDC_STATIC,7,224,68,14,SS_CENTERIMAGE
+    RTEXT           "Lento / Médio",IDC_STATIC,7,241,68,14,SS_CENTERIMAGE
+    RTEXT           "Médio",IDC_STATIC,7,259,68,14,SS_CENTERIMAGE
+    GROUPBOX        "Definição de ritmos",IDC_STATIC,7,215,306,67
+    GROUPBOX        "Encoder",IDC_STATIC,7,286,306,29
+    CONTROL         "Slider1",IDC_DELAY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,295,174,15
+    EDITTEXT        IDC_DELAYV,261,295,45,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Audio Delay:",IDC_STATIC,13,294,62,14,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_INSTR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,149,174,15
+    RTEXT           "Substituiçãp p/ Instr.",IDC_STATIC,7,149,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_INSTV,261,149,52,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_MIXER,84,333,222,119,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Placa de som",IDC_STATIC,13,332,62,14,SS_CENTERIMAGE
+    GROUPBOX        "Entrada Auxiliar",IDC_STATIC,7,321,306,33
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 75
+        VERTGUIDE, 84
+        VERTGUIDE, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Config.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\resources\\Config.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Config..."
+    IDS_APPTITLE            "Digital Broadcaster 2006.001"
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG_DIALOG DIALOGEX 0, 0, 320, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Configuración"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_AUDIOMUSICA,84,7,229,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Musica:",IDC_STATIC,7,7,68,14,SS_CENTERIMAGE
+    RTEXT           "Monitor:",IDC_STATIC,7,22,68,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_AUDIOMONICAO,84,22,229,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CARTWALL,84,36,229,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GRAVACAOTAKES,84,62,222,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Cartuchero:",IDC_STATIC,7,36,68,14,SS_CENTERIMAGE
+    RTEXT           "Targeta:",IDC_STATIC,15,62,60,12,SS_CENTERIMAGE
+    RTEXT           "IIS (URL)",IDC_STATIC,7,175,68,14,SS_CENTERIMAGE
+    RTEXT           "Salida para TAKE",IDC_STATIC,7,114,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_URL,84,175,229,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_FADE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,114,174,15
+    CONTROL         "Slider1",IDC_ONINTRO,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,131,174,15
+    RTEXT           "Intro c/ TAKE",IDC_STATIC,7,131,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_VALOR1,261,114,52,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_VALOR2,261,131,52,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Carpeta TEMP",IDC_STATIC,7,195,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TEMP,84,195,229,14,ES_AUTOHSCROLL
+    GROUPBOX        "Grabación",IDC_STATIC,7,53,306,57
+    COMBOBOX        IDC_FORMAT,84,76,222,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PARAM,84,91,222,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Formato:",IDC_STATIC,15,76,60,12,SS_CENTERIMAGE
+    RTEXT           "Parametros:",IDC_STATIC,24,91,51,12,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLOW,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,224,174,15
+    CONTROL         "Slider1",IDC_SLOWAVG,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,241,174,15
+    CONTROL         "Slider1",IDC_AVG,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,259,174,15
+    EDITTEXT        IDC_SLOWV,262,224,45,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SLOWAVGV,261,241,45,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AVGV,261,259,45,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Lento",IDC_STATIC,7,224,68,14,SS_CENTERIMAGE
+    RTEXT           "Lento / Medio",IDC_STATIC,7,241,68,14,SS_CENTERIMAGE
+    RTEXT           "Médio",IDC_STATIC,7,259,68,14,SS_CENTERIMAGE
+    GROUPBOX        "Definición de ritmos",IDC_STATIC,7,215,306,67
+    GROUPBOX        "Encoder",IDC_STATIC,7,285,306,29
+    CONTROL         "Slider1",IDC_DELAY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,295,174,15
+    EDITTEXT        IDC_DELAYV,261,295,45,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Audio Delay:",IDC_STATIC,13,294,62,14,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_INSTR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,84,149,174,15
+    RTEXT           "Substitución p/ Instr.",IDC_STATIC,7,149,68,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_INSTV,261,149,52,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 75
+        VERTGUIDE, 84
+        VERTGUIDE, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Config..."
+    IDS_APPTITLE            "Digital RM 5.1.01"
+END
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Config.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

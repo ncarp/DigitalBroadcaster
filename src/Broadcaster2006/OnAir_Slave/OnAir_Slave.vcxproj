@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{755EE30B-0C56-4219-ADD8-C098D1E1FFBB}</ProjectGuid>
+    <RootNamespace>OnAir_Slave</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v90</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v90</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30128.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(DXSDK_DIR)include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/OnAir_Slave.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/OnAir_Slave.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0816</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>dxguid.lib;dsound.lib;winmm.lib;msacm32.lib;ws2_32.lib;dxerr9.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/OnAir_Slave.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/OnAir_Slave.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/OnAir_Slave.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/OnAir_Slave.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0816</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>dxguid.lib;dsound.lib;winmm.lib;msacm32.lib;ws2_32.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Release/OnAir_Splitter.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/OnAir_Slave.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\OnAir\AiredListBox.cpp" />
+    <ClCompile Include="..\OnAir\AiredWnd.cpp" />
+    <ClCompile Include="..\Common\Source\AudioStream.cpp" />
+    <ClCompile Include="ChildView.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="ControlWnd.cpp" />
+    <ClCompile Include="..\OnAir\LineUpListBox.cpp" />
+    <ClCompile Include="..\OnAir\LineUpWnd.cpp" />
+    <ClCompile Include="..\OnAir\Logger.cpp" />
+    <ClCompile Include="..\OnAir\MainClockWnd.cpp" />
+    <ClCompile Include="MainFrm.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Mp3File.cpp" />
+    <ClCompile Include="..\OnAir\MusicInfo.cpp" />
+    <ClCompile Include="Mixer.cpp" />
+    <ClCompile Include="MixerWasapi.cpp" />
+    <ClCompile Include="OnAir_Slave.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="OnAirContainerWnd.cpp" />
+    <ClCompile Include="..\OnAir\OnAirDefines.cpp" />
+    <ClCompile Include="..\OnAir\OnAirDropTarget.cpp" />
+    <ClCompile Include="..\OnAir\OnAirHtml.cpp" />
+    <ClCompile Include="..\OnAir\OnAirPlayerWnd.cpp" />
+    <ClCompile Include="OnAirSplitter.cpp" />
+    <ClCompile Include="..\Common\Source\Permissions.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\PFLWnd.cpp" />
+    <ClCompile Include="..\OnAir\PlayerButton.cpp" />
+    <ClCompile Include="..\OnAir\PlayerOptionsWnd.cpp" />
+    <ClCompile Include="..\OnAir\ProgInfoWnd.cpp" />
+    <ClCompile Include="..\Source\RSBlocksComposition.cpp" />
+    <ClCompile Include="..\Source\RSBlocksDefinition.cpp" />
+    <ClCompile Include="..\Common\Source\rscomputers.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSOnAirLog.cpp" />
+    <ClCompile Include="..\Source\RSRadioStations.cpp" />
+    <ClCompile Include="..\Source\RSSchedule.cpp" />
+    <ClCompile Include="..\Source\RSScheduleHeadline.cpp" />
+    <ClCompile Include="..\Common\Source\rssystemusers.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\RSViewInstrumentals.cpp" />
+    <ClCompile Include="..\OnAir\RSViewJinglesDataOnAir.cpp" />
+    <ClCompile Include="..\OnAir\RSViewMusicDataPlaying.cpp" />
+    <ClCompile Include="..\Source\RSViewRecordings.cpp" />
+    <ClCompile Include="..\Source\RSViewRms.cpp" />
+    <ClCompile Include="..\Source\RSViewSchedule.cpp" />
+    <ClCompile Include="..\OnAir\RSViewSpotOnAirData.cpp" />
+    <ClCompile Include="..\Source\RSViewTimeSignal.cpp" />
+    <ClCompile Include="..\Source\RSViewTraffic.cpp" />
+    <ClCompile Include="..\OnAir\RSViewVoiceInsertOnAir.cpp" />
+    <ClCompile Include="..\Common\Source\splitter_utils.cpp" />
+    <ClCompile Include="SplitterConfigDlg.cpp" />
+    <ClCompile Include="SplitterLogo.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\TrafficInfoWnd.cpp" />
+    <ClCompile Include="..\OnAir\typeLineUpItem.cpp" />
+    <ClCompile Include="..\Common\Source\Utils.cpp" />
+    <ClCompile Include="..\OnAir\VolumeSlider.cpp" />
+    <ClCompile Include="..\Common\Source\WaveFile.cpp" />
+    <ClCompile Include="..\Source\WaveIO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OnAir_Slave.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildView.h" />
+    <ClInclude Include="ControlWnd.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Mixer.h" />
+    <ClInclude Include="MixerWasapi.h" />
+    <ClInclude Include="OnAir_Slave.h" />
+    <ClInclude Include="OnAirContainerWnd.h" />
+    <ClInclude Include="..\OnAir\OnAirDefines.h" />
+    <ClInclude Include="OnAirSplitter.h" />
+    <ClInclude Include="..\OnAir\ProgInfoWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="..\Common\Include\splitter_utils.h" />
+    <ClInclude Include="SplitterConfigDlg.h" />
+    <ClInclude Include="SplitterLogo.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Automatic.bmp" />
+    <None Include="res\Back.bmp" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\Config.bmp" />
+    <None Include="res\Container - Aired.bmp" />
+    <None Include="res\Container - Blocks.bmp" />
+    <None Include="res\Container - Bumped.bmp" />
+    <None Include="res\Container - CARTWALL.bmp" />
+    <None Include="res\Container - Comercial.bmp" />
+    <None Include="res\Container - Internet.bmp" />
+    <None Include="res\Container - jingles.bmp" />
+    <None Include="res\Container - LineUp.bmp" />
+    <None Include="res\Container - Music Folder.bmp" />
+    <None Include="res\Container - Music Search.bmp" />
+    <None Include="res\Container - Music.bmp" />
+    <None Include="res\Container - Producer.bmp" />
+    <None Include="res\Container - RMS.bmp" />
+    <None Include="res\Container - Scheduling.bmp" />
+    <None Include="res\Container - Voice Insert.bmp" />
+    <None Include="res\Cue.bmp" />
+    <None Include="res\CUT.bmp" />
+    <None Include="res\Discard.bmp" />
+    <None Include="res\Drm5 - logo.bmp" />
+    <None Include="res\Exit.bmp" />
+    <None Include="res\Folder-Music.bmp" />
+    <None Include="res\Foward.bmp" />
+    <None Include="res\Garbage.bmp" />
+    <None Include="res\Info-Hot.bmp" />
+    <None Include="res\Info.bmp" />
+    <None Include="res\Jingle.bmp" />
+    <None Include="res\Live-Assist.bmp" />
+    <None Include="res\load.bmp" />
+    <None Include="res\logo_splitter.bmp" />
+    <None Include="res\loop.bmp" />
+    <None Include="res\loopgray.bmp" />
+    <None Include="res\Manual.bmp" />
+    <None Include="res\Mix.bmp" />
+    <None Include="res\MoveDown-Hot.bmp" />
+    <None Include="res\MoveDown.bmp" />
+    <None Include="res\MoveUp-Hot.bmp" />
+    <None Include="res\MoveUp.bmp" />
+    <None Include="res\Music.bmp" />
+    <None Include="res\New Scheduling.bmp" />
+    <None Include="res\New Sound.bmp" />
+    <None Include="res\new.bmp" />
+    <None Include="res\OnAir_Slave.ico" />
+    <None Include="res\OnAir_Slave.rc2" />
+    <None Include="res\Pause - Big.bmp" />
+    <None Include="res\Pause - Off.bmp" />
+    <None Include="res\Pause - On.bmp" />
+    <None Include="res\PFL.bmp" />
+    <None Include="res\Play.bmp" />
+    <None Include="res\Rec Off.bmp" />
+    <None Include="res\Rec.bmp" />
+    <None Include="res\refresh-hot.bmp" />
+    <None Include="res\refresh.BMP" />
+    <None Include="res\save.bmp" />
+    <None Include="res\Spot.bmp" />
+    <None Include="res\Stop.bmp" />
+    <None Include="res\Thumb-Volume.bmp" />
+    <None Include="res\TimeSignal.bmp" />
+    <None Include="res\Tool - Edit.bmp" />
+    <None Include="res\Tool - Lock.bmp" />
+    <None Include="res\TOOL - Query.bmp" />
+    <None Include="res\Tree - Lock.bmp" />
+    <None Include="res\UnCue.bmp" />
+    <None Include="res\Voice Insert.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\Hasp\hasp32b.obj" />
+    <Object Include="..\Hasp\haspms32.obj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="OnAir_Slave.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

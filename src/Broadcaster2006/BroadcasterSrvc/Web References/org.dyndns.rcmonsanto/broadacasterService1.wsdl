@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://high-precision.pt/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://high-precision.pt/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://high-precision.pt/">
+      <s:element name="Hello">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlayers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPlayersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlayersResult" type="tns:ArrayOfPlayerInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPlayerInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PlayerInfo" type="tns:PlayerInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PlayerInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PlayerN" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ItemType" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ItemParentID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemName1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemName2" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDaySchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDayScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDayScheduleResult" type="tns:ArrayOfScheduleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfScheduleInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ScheduleInfo" type="tns:ScheduleInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ScheduleInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduleID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateStart" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateFinish" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Songs" type="tns:ArrayOfSongInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSongInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SongInfo" type="tns:SongInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SongInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Time" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SongID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArtistName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloSoapIn">
+    <wsdl:part name="parameters" element="tns:Hello" />
+  </wsdl:message>
+  <wsdl:message name="HelloSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlayersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlayers" />
+  </wsdl:message>
+  <wsdl:message name="GetPlayersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDayScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDaySchedule" />
+  </wsdl:message>
+  <wsdl:message name="GetDayScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDayScheduleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BroadacasterService1Soap">
+    <wsdl:operation name="Hello">
+      <wsdl:input message="tns:HelloSoapIn" />
+      <wsdl:output message="tns:HelloSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlayers">
+      <wsdl:input message="tns:GetPlayersSoapIn" />
+      <wsdl:output message="tns:GetPlayersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDaySchedule">
+      <wsdl:input message="tns:GetDayScheduleSoapIn" />
+      <wsdl:output message="tns:GetDayScheduleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BroadacasterService1Soap" type="tns:BroadacasterService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Hello">
+      <soap:operation soapAction="http://high-precision.pt/Hello" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlayers">
+      <soap:operation soapAction="http://high-precision.pt/GetPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDaySchedule">
+      <soap:operation soapAction="http://high-precision.pt/GetDaySchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BroadacasterService1Soap12" type="tns:BroadacasterService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Hello">
+      <soap12:operation soapAction="http://high-precision.pt/Hello" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlayers">
+      <soap12:operation soapAction="http://high-precision.pt/GetPlayers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDaySchedule">
+      <soap12:operation soapAction="http://high-precision.pt/GetDaySchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BroadacasterService1">
+    <wsdl:port name="BroadacasterService1Soap" binding="tns:BroadacasterService1Soap">
+      <soap:address location="http://rcmonsanto.dyndns.org:8888/broadacasterService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BroadacasterService1Soap12" binding="tns:BroadacasterService1Soap12">
+      <soap12:address location="http://rcmonsanto.dyndns.org:8888/broadacasterService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="OnAirConnectionString">
+      <rd:DataSourceID>f96efcd4-a28c-4b76-8619-7afa26ac4eed</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>
+        </DataProvider>
+        <ConnectString>
+        </ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>84c9930f-d700-44f7-b658-0f289174d7c8</rd:ReportID>
+  <Width>12.69841cm</Width>
+  <Body>
+    <Height>12.34286cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>Report1</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.91429cm</Height>
+      </Textbox>
+      <List Name="List1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <Color>SlateGray</Color>
+        </Style>
+        <ReportItems>
+          <Textbox Name="AirDate">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>14pt</FontSize>
+              <Color>SlateGray</Color>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <rd:DefaultName>AirDate</rd:DefaultName>
+            <Value>=Fields!AirDate.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Height>0.68571cm</Height>
+          </Textbox>
+          <List Name="List2">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>12pt</FontSize>
+            </Style>
+            <ReportItems>
+              <Textbox Name="Artist">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <rd:DefaultName>Artist</rd:DefaultName>
+                <Value>=Fields!Artist.Value</Value>
+                <CanGrow>true</CanGrow>
+                <Height>0.60952cm</Height>
+              </Textbox>
+              <List Name="List3">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>10pt</FontSize>
+                </Style>
+                <ReportItems>
+                  <Textbox Name="Title">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <rd:DefaultName>Title</rd:DefaultName>
+                    <Value>=Fields!Title.Value</Value>
+                    <CanGrow>true</CanGrow>
+                    <Height>0.53333cm</Height>
+                  </Textbox>
+                  <List Name="List4">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                    </Style>
+                    <ReportItems>
+                      <Textbox Name="Length">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                        <rd:DefaultName>Length</rd:DefaultName>
+                        <Value>=Fields!Length.Value</Value>
+                        <CanGrow>true</CanGrow>
+                        <Height>0.53333cm</Height>
+                      </Textbox>
+                      <List Name="List5">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                        </Style>
+                        <ReportItems>
+                          <Textbox Name="LangCode">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                            <rd:DefaultName>LangCode</rd:DefaultName>
+                            <Value>=Fields!LangCode.Value</Value>
+                            <CanGrow>true</CanGrow>
+                            <Height>0.53333cm</Height>
+                          </Textbox>
+                          <List Name="List6">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                            </Style>
+                            <ReportItems>
+                              <Textbox Name="NatCode">
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>10pt</FontSize>
+                                  <PaddingLeft>2pt</PaddingLeft>
+                                  <PaddingRight>2pt</PaddingRight>
+                                  <PaddingTop>2pt</PaddingTop>
+                                  <PaddingBottom>2pt</PaddingBottom>
+                                </Style>
+                                <rd:DefaultName>NatCode</rd:DefaultName>
+                                <Value>=Fields!NatCode.Value</Value>
+                                <CanGrow>true</CanGrow>
+                                <Height>0.53333cm</Height>
+                              </Textbox>
+                              <List Name="List7">
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>10pt</FontSize>
+                                </Style>
+                                <ReportItems>
+                                  <Textbox Name="EU">
+                                    <Style>
+                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontSize>10pt</FontSize>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                    <rd:DefaultName>EU</rd:DefaultName>
+                                    <Value>=Fields!EU.Value</Value>
+                                    <CanGrow>true</CanGrow>
+                                    <Height>0.53333cm</Height>
+                                  </Textbox>
+                                  <List Name="List8">
+                                    <Style>
+                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontSize>10pt</FontSize>
+                                    </Style>
+                                    <ReportItems>
+                                      <Textbox Name="RecordingDate">
+                                        <Style>
+                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontSize>10pt</FontSize>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                        <rd:DefaultName>RecordingDate</rd:DefaultName>
+                                        <Value>=Fields!RecordingDate.Value</Value>
+                                        <CanGrow>true</CanGrow>
+                                        <Height>0.53333cm</Height>
+                                      </Textbox>
+                                      <List Name="List9">
+                                        <Style>
+                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontSize>10pt</FontSize>
+                                        </Style>
+                                        <ReportItems>
+                                          <Textbox Name="Category">
+                                            <Style>
+                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontSize>10pt</FontSize>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                            <rd:DefaultName>Category</rd:DefaultName>
+                                            <Value>=Fields!Category.Value</Value>
+                                            <CanGrow>true</CanGrow>
+                                            <Height>0.53333cm</Height>
+                                          </Textbox>
+                                          <Table Name="table1">
+                                            <Top>1.26984cm</Top>
+                                            <Style />
+                                            <Header>
+                                              <RepeatOnNewPage>true</RepeatOnNewPage>
+                                              <TableRows>
+                                                <TableRow>
+                                                  <TableCells />
+                                                  <Height>0.00000cm</Height>
+                                                </TableRow>
+                                              </TableRows>
+                                            </Header>
+                                            <Details>
+                                              <TableRows>
+                                                <TableRow>
+                                                  <TableCells />
+                                                  <Height>0.00000cm</Height>
+                                                </TableRow>
+                                              </TableRows>
+                                            </Details>
+                                            <TableColumns />
+                                            <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                                          </Table>
+                                        </ReportItems>
+                                        <Grouping Name="list1_Category">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!Category.Value</GroupExpression>
+                                          </GroupExpressions>
+                                          <PageBreakAtEnd>true</PageBreakAtEnd>
+                                        </Grouping>
+                                        <Sorting>
+                                          <SortBy>
+                                            <SortExpression>=Fields!Category.Value</SortExpression>
+                                          </SortBy>
+                                        </Sorting>
+                                        <Top>1.26984cm</Top>
+                                        <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                                      </List>
+                                    </ReportItems>
+                                    <Grouping Name="list1_RecordingDate">
+                                      <GroupExpressions>
+                                        <GroupExpression>=Fields!RecordingDate.Value</GroupExpression>
+                                      </GroupExpressions>
+                                      <PageBreakAtEnd>true</PageBreakAtEnd>
+                                    </Grouping>
+                                    <Sorting>
+                                      <SortBy>
+                                        <SortExpression>=Fields!RecordingDate.Value</SortExpression>
+                                      </SortBy>
+                                    </Sorting>
+                                    <Top>1.26984cm</Top>
+                                    <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                                  </List>
+                                </ReportItems>
+                                <Grouping Name="list1_EU">
+                                  <GroupExpressions>
+                                    <GroupExpression>=Fields!EU.Value</GroupExpression>
+                                  </GroupExpressions>
+                                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                                </Grouping>
+                                <Sorting>
+                                  <SortBy>
+                                    <SortExpression>=Fields!EU.Value</SortExpression>
+                                  </SortBy>
+                                </Sorting>
+                                <Top>1.26984cm</Top>
+                                <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                              </List>
+                            </ReportItems>
+                            <Grouping Name="list1_NatCode">
+                              <GroupExpressions>
+                                <GroupExpression>=Fields!NatCode.Value</GroupExpression>
+                              </GroupExpressions>
+                              <PageBreakAtEnd>true</PageBreakAtEnd>
+                            </Grouping>
+                            <Sorting>
+                              <SortBy>
+                                <SortExpression>=Fields!NatCode.Value</SortExpression>
+                              </SortBy>
+                            </Sorting>
+                            <Top>1.26984cm</Top>
+                            <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                          </List>
+                        </ReportItems>
+                        <Grouping Name="list1_LangCode">
+                          <GroupExpressions>
+                            <GroupExpression>=Fields!LangCode.Value</GroupExpression>
+                          </GroupExpressions>
+                          <PageBreakAtEnd>true</PageBreakAtEnd>
+                        </Grouping>
+                        <Sorting>
+                          <SortBy>
+                            <SortExpression>=Fields!LangCode.Value</SortExpression>
+                          </SortBy>
+                        </Sorting>
+                        <Top>1.26984cm</Top>
+                        <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                      </List>
+                    </ReportItems>
+                    <Grouping Name="list1_Length">
+                      <GroupExpressions>
+                        <GroupExpression>=Fields!Length.Value</GroupExpression>
+                      </GroupExpressions>
+                      <PageBreakAtEnd>true</PageBreakAtEnd>
+                    </Grouping>
+                    <Sorting>
+                      <SortBy>
+                        <SortExpression>=Fields!Length.Value</SortExpression>
+                      </SortBy>
+                    </Sorting>
+                    <Top>1.26984cm</Top>
+                    <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+                  </List>
+                </ReportItems>
+                <Grouping Name="list1_Title">
+                  <GroupExpressions>
+                    <GroupExpression>=Fields!Title.Value</GroupExpression>
+                  </GroupExpressions>
+                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                </Grouping>
+                <Sorting>
+                  <SortBy>
+                    <SortExpression>=Fields!Title.Value</SortExpression>
+                  </SortBy>
+                </Sorting>
+                <Top>1.26984cm</Top>
+                <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+              </List>
+            </ReportItems>
+            <Grouping Name="list1_Artist">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Artist.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!Artist.Value</SortExpression>
+              </SortBy>
+            </Sorting>
+            <Top>1.26984cm</Top>
+            <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+          </List>
+        </ReportItems>
+        <Grouping Name="list1_AirDate">
+          <GroupExpressions>
+            <GroupExpression>=Fields!AirDate.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+        <Sorting>
+          <SortBy>
+            <SortExpression>=Fields!AirDate.Value</SortExpression>
+          </SortBy>
+        </Sorting>
+        <Top>0.91429cm</Top>
+        <DataSetName>OnAirDataSet_ViewERC</DataSetName>
+      </List>
+    </ReportItems>
+  </Body>
+  <Language>en-US</Language>
+  <LeftMargin>2.5cm</LeftMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <TopMargin>2.5cm</TopMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <PageWidth>21cm</PageWidth>
+  <PageHeight>29.7cm</PageHeight>
+  <DataSets>
+    <DataSet Name="OnAirDataSet_ViewERC">
+      <rd:DataSetInfo>
+        <rd:DataSetName>OnAirDataSet</rd:DataSetName>
+        <rd:TableName>ViewERC</rd:TableName>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>ViewERCTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT AirDate, Title, Artist, LangCode, NatCode, EU, Length, RecordingDate, Category FROM dbo.ViewERC</CommandText>
+        <DataSourceName>OnAirConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="AirDate">
+          <DataField>AirDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Title">
+          <DataField>Title</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Artist">
+          <DataField>Artist</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LangCode">
+          <DataField>LangCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NatCode">
+          <DataField>NatCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EU">
+          <DataField>EU</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Length">
+          <DataField>Length</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RecordingDate">
+          <DataField>RecordingDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Category">
+          <DataField>Category</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+</Report>

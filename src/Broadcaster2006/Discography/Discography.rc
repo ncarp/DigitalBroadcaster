@@ -1,0 +1,961 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Discography"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Discography Version 2006.01",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright High Precision, Lda (c) 2006",IDC_STATIC,40,22,139,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Build 101",IDC_STATIC,40,34,119,8
+END
+
+IDR_MAINFRAME DIALOG  0, 0, 330, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: layout dialog bar ",IDC_STATIC,12,4,300,8
+END
+
+IDD_ARTIST DIALOGEX 0, 0, 421, 345
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Artist editing"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_NAME,110,7,304,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,23,100,15,0,HIDC_DATE
+    EDITTEXT        IDC_ADRESS,110,41,304,42,ES_AUTOHSCROLL
+    COMBOBOX        IDC_NATIONALITY,110,85,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WWW,110,99,304,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,110,115,304,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LABEL,110,131,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FANCLUB,110,148,304,42,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARCKS,110,194,304,119,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,364,324,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,309,324,50,14
+    RTEXT           "Name:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Date of birth:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    RTEXT           "Adress:",IDC_STATIC,7,41,93,14,SS_CENTERIMAGE
+    RTEXT           "Nationality:",IDC_STATIC,7,85,93,12,SS_CENTERIMAGE
+    RTEXT           "www:",IDC_STATIC,7,99,93,14,SS_CENTERIMAGE
+    RTEXT           "e-mail",IDC_STATIC,7,115,93,14,SS_CENTERIMAGE
+    RTEXT           "Fan Club:",IDC_STATIC,7,148,93,12,SS_CENTERIMAGE
+    RTEXT           "Remarks:",IDC_STATIC,7,194,93,12,SS_CENTERIMAGE
+    RTEXT           "Record Label:",IDC_STATIC,7,131,93,12,SS_CENTERIMAGE
+END
+
+IDD_MUSIC DIALOG  0, 0, 496, 433
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VSCROLL
+CAPTION "Music editing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,428,412,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,373,412,50,14
+    RTEXT           "Artist:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_ARTIST,110,7,368,120,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TITLE,110,21,368,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TYPE,110,40,368,146,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EXPRESSION,110,54,368,122,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_RYTHM,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,110,69,319,16
+    EDITTEXT        IDC_RYTHMV,430,68,48,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_CD,110,87,368,152,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LABEL,110,115,368,142,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRODUCER,110,134,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPOSER,110,149,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LYRICS,110,164,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSICIANS,110,180,368,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_STUDIO,110,228,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARKS,110,244,368,47,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,100,368,15
+    RTEXT           "Title:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Categorie:",IDC_STATIC,7,40,93,12,SS_CENTERIMAGE
+    RTEXT           "Language:",IDC_STATIC,7,54,93,12,SS_CENTERIMAGE
+    RTEXT           "Rhythm:",IDC_STATIC,7,69,93,16,SS_CENTERIMAGE
+    RTEXT           "CD:",IDC_STATIC,7,87,93,12,SS_CENTERIMAGE
+    RTEXT           "Recording Date:",IDC_STATIC,7,100,93,12,SS_CENTERIMAGE
+    RTEXT           "Record Label:",IDC_STATIC,7,115,93,12,SS_CENTERIMAGE
+    RTEXT           "Producer:",IDC_STATIC,7,134,93,14,SS_CENTERIMAGE
+    RTEXT           "Composer:",IDC_STATIC,7,149,93,14,SS_CENTERIMAGE
+    RTEXT           "Lyrics:",IDC_STATIC,7,164,93,14,SS_CENTERIMAGE
+    RTEXT           "Musicians:",IDC_STATIC,7,180,93,14,SS_CENTERIMAGE
+    RTEXT           "Studio:",IDC_STATIC,7,228,93,14,SS_CENTERIMAGE
+    RTEXT           "Remarks:",IDC_STATIC,7,244,93,14,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,1,0,101
+ PRODUCTVERSION 5,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Audio Broadcast Software System"
+            VALUE "FileDescription", "Discography"
+            VALUE "FileVersion", "5, 1, 0, 101"
+            VALUE "InternalName", "Discography"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "Discography.EXE"
+            VALUE "ProductName", "Discography Application"
+            VALUE "ProductVersion", "5, 1, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ARTIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_MUSIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 426
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ARTIST DIALOGEX 0, 0, 421, 345
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Edição de fichas de interpretes"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_NAME,110,7,304,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,23,100,15
+    EDITTEXT        IDC_ADRESS,110,41,304,42,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    COMBOBOX        IDC_NATIONALITY,110,85,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WWW,110,99,304,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,110,115,304,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LABEL,110,131,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FANCLUB,110,148,304,42,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_REMARCKS,110,194,304,119,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,364,324,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,309,324,50,14
+    RTEXT           "Nome:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Data de nascimento:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    RTEXT           "Endereço:",IDC_STATIC,7,41,93,14,SS_CENTERIMAGE
+    RTEXT           "Nacionalidade:",IDC_STATIC,7,85,93,12,SS_CENTERIMAGE
+    RTEXT           "www:",IDC_STATIC,7,99,93,14,SS_CENTERIMAGE
+    RTEXT           "e-mail",IDC_STATIC,7,115,93,14,SS_CENTERIMAGE
+    RTEXT           "Clube de Fans:",IDC_STATIC,7,148,93,12,SS_CENTERIMAGE
+    RTEXT           "Observações:",IDC_STATIC,7,194,93,12,SS_CENTERIMAGE
+    RTEXT           "Editora:",IDC_STATIC,7,131,93,12,SS_CENTERIMAGE
+END
+
+IDD_MUSIC DIALOG  0, 0, 496, 433
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VSCROLL
+CAPTION "Edição de Musicas"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,428,412,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,373,412,50,14
+    RTEXT           "Interprete:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_ARTIST,110,7,368,120,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TITLE,110,21,368,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TYPE,110,40,368,146,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EXPRESSION,110,54,368,122,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_RYTHM,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,110,69,319,16
+    EDITTEXT        IDC_RYTHMV,430,68,48,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_CD,110,87,368,152,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LABEL,110,115,368,142,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRODUCER,110,134,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPOSER,110,149,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LYRICS,110,164,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSICIANS,110,180,368,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_STUDIO,110,228,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARKS,110,244,368,47,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,100,368,15
+    RTEXT           "Titulo:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Género:",IDC_STATIC,7,40,93,12,SS_CENTERIMAGE
+    RTEXT           "Expressão:",IDC_STATIC,7,54,93,12,SS_CENTERIMAGE
+    RTEXT           "Ritmo",IDC_STATIC,7,69,93,16,SS_CENTERIMAGE
+    RTEXT           "CD:",IDC_STATIC,7,87,93,12,SS_CENTERIMAGE
+    RTEXT           "Data de Gravação:",IDC_STATIC,7,100,93,12,SS_CENTERIMAGE
+    RTEXT           "Editora:",IDC_STATIC,7,115,93,12,SS_CENTERIMAGE
+    RTEXT           "Produtor:",IDC_STATIC,7,134,93,14,SS_CENTERIMAGE
+    RTEXT           "Compositor:",IDC_STATIC,7,149,93,14,SS_CENTERIMAGE
+    RTEXT           "Letra:",IDC_STATIC,7,164,93,14,SS_CENTERIMAGE
+    RTEXT           "Musicos:",IDC_STATIC,7,180,93,14,SS_CENTERIMAGE
+    RTEXT           "Estúdio:",IDC_STATIC,7,228,93,14,SS_CENTERIMAGE
+    RTEXT           "Observações:",IDC_STATIC,7,244,93,14,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ARTIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_MUSIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 426
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG  0, 0, 406, 392
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_MUSIC DIALOG  0, 0, 496, 433
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VSCROLL
+CAPTION "Edição de Musicas"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,428,412,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,373,412,50,14
+    RTEXT           "Interprete:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_ARTIST,110,7,368,120,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TITLE,110,21,368,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TYPE,110,40,368,146,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EXPRESSION,110,54,368,122,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_RYTHM,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,110,69,319,16
+    EDITTEXT        IDC_RYTHMV,430,68,48,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_CD,110,87,368,152,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LABEL,110,115,368,142,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRODUCER,110,134,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPOSER,110,149,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LYRICS,110,164,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSICIANS,110,180,368,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_STUDIO,110,228,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARKS,110,244,368,47,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,100,368,15
+    RTEXT           "Titulo:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Género:",IDC_STATIC,7,40,93,12,SS_CENTERIMAGE
+    RTEXT           "Expressão:",IDC_STATIC,7,54,93,12,SS_CENTERIMAGE
+    RTEXT           "Ritmo",IDC_STATIC,7,69,93,16,SS_CENTERIMAGE
+    RTEXT           "CD:",IDC_STATIC,7,87,93,12,SS_CENTERIMAGE
+    RTEXT           "Data de Gravação:",IDC_STATIC,7,100,93,12,SS_CENTERIMAGE
+    RTEXT           "Editora:",IDC_STATIC,7,115,93,12,SS_CENTERIMAGE
+    RTEXT           "Produtor:",IDC_STATIC,7,134,93,14,SS_CENTERIMAGE
+    RTEXT           "Compositor:",IDC_STATIC,7,149,93,14,SS_CENTERIMAGE
+    RTEXT           "Letra:",IDC_STATIC,7,164,93,14,SS_CENTERIMAGE
+    RTEXT           "Musicos:",IDC_STATIC,7,180,93,14,SS_CENTERIMAGE
+    RTEXT           "Estúdio:",IDC_STATIC,7,228,93,14,SS_CENTERIMAGE
+    RTEXT           "Observações:",IDC_STATIC,7,244,93,14,SS_CENTERIMAGE
+END
+
+IDD_FILESELECTION DIALOGEX 0, 0, 536, 284
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecção de ficheiro audio"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Editar",IDOK,110,244,82,14
+    PUSHBUTTON      "Sair",IDCANCEL,479,263,50,14
+    COMBOBOX        IDC_PATH,110,7,419,110,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Excluir ficheiros já editados",IDC_UNEDIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,22,419,10
+    RTEXT           "Localização",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    LISTBOX         IDC_LIST1,110,36,268,200,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",0x1,385,222,144,14
+    EDITTEXT        IDC_FILEDETAILS,385,36,144,181,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Mudar o Nome",ID_RENAME,203,244,82,14
+    DEFPUSHBUTTON   "Eliminar",ID_DELETE,296,244,82,14
+END
+
+IDD_ARTIST DIALOGEX 0, 0, 421, 345
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Edição de fichas de interpretes"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_NAME,110,7,304,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,23,100,15
+    EDITTEXT        IDC_ADRESS,110,41,304,42,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    COMBOBOX        IDC_NATIONALITY,110,85,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WWW,110,99,304,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,110,115,304,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LABEL,110,131,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FANCLUB,110,148,304,42,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_REMARCKS,110,194,304,119,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,364,324,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,309,324,50,14
+    RTEXT           "Nome:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Data de nascimento:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    RTEXT           "Morada:",IDC_STATIC,7,41,93,14,SS_CENTERIMAGE
+    RTEXT           "Nacionalidade:",IDC_STATIC,7,85,93,12,SS_CENTERIMAGE
+    RTEXT           "www:",IDC_STATIC,7,99,93,14,SS_CENTERIMAGE
+    RTEXT           "e-mail",IDC_STATIC,7,115,93,14,SS_CENTERIMAGE
+    RTEXT           "Clube de Fans:",IDC_STATIC,7,148,93,12,SS_CENTERIMAGE
+    RTEXT           "Observações:",IDC_STATIC,7,194,93,12,SS_CENTERIMAGE
+    RTEXT           "Editora:",IDC_STATIC,7,131,93,12,SS_CENTERIMAGE
+END
+
+IDD_RENAMEFILE DIALOGEX 0, 0, 307, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Renomear um Ficheiro"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,179,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,250,29,50,14
+    COMBOBOX        IDC_FILENAME,96,7,204,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Nome do Ficheiro:",IDC_STATIC,7,7,81,12,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 385
+    END
+
+    IDD_MUSIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 426
+    END
+
+    IDD_FILESELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 529
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        VERTGUIDE, 378
+        VERTGUIDE, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+        HORZGUIDE, 236
+        HORZGUIDE, 244
+    END
+
+    IDD_ARTIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_RENAMEFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Ajuda",                       ID_HELP_HELP
+        MENUITEM "&About Discography...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\resources\\discography.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NEW                 BITMAP                  "res\\new.bmp"
+IDB_CONTAINER_JINGLES   BITMAP                  "res\\Container - jingles.bmp"
+IDB_CONTAINER_MUSIC     BITMAP                  "res\\Container - Music.bmp"
+IDB_CONTAINER_RMS       BITMAP                  "res\\Container - RMS.bmp"
+IDB_CONTAINER_TRAFFIC   BITMAP                  "res\\Container - Comercial.bmp"
+IDB_CONTAINER_VOICEINSERT BITMAP                "res\\Container - Voice Insert.bmp"
+IDB_PAUSE_BIG           BITMAP                  "..\\resources\\Pause - Big.bmp"
+IDB_PLAY                BITMAP                  "..\\resources\\Play.bmp"
+IDB_REC                 BITMAP                  "..\\resources\\Rec.bmp"
+IDB_RECOFF              BITMAP                  "res\\Rec Off.bmp"
+IDB_STOP                BITMAP                  "..\\resources\\Stop.bmp"
+IDB_TOOL_CUT            BITMAP                  "..\\resources\\Tool - Cut.bmp"
+IDB_TOOL_EDIT           BITMAP                  "..\\resources\\Tool - Edit.bmp"
+IDB_TOOL_EDIT_SPOT      BITMAP                  "res\\Tool - Edit Spot.bmp"
+IDB_TOOL_NEWBLOCK       BITMAP                  "res\\Tool - New Block.bmp"
+IDB_TOOL_NEWCARTWALL    BITMAP                  "res\\Tool - Cartwall.bmp"
+IDB_TOOL_NEWJINGLE      BITMAP                  "res\\Tool - New Jingle.bmp"
+IDB_TOOL_NEWNEWSLINEUP  BITMAP                  "res\\Tool - New News LineUp.bmp"
+IDB_TOOL_NEWPLAYLIST    BITMAP                  "res\\Tool - New Play List.bmp"
+IDB_TOOL_NEWRM          BITMAP                  "res\\Tool - New RM.bmp"
+IDB_TOOL_NEWSOUND       BITMAP                  "res\\Tool - New Sound.bmp"
+IDB_TOOL_NEWSPOT        BITMAP                  "res\\TOOL - New Spot.bmp"
+IDB_TOOL_NEWTEXT        BITMAP                  "res\\Tool - New Text.bmp"
+IDB_TOOL_NEWTRAFFICSCHEDULE BITMAP              "res\\Tool - New Traffic Schedule.bmp"
+IDB_TOOL_PFL            BITMAP                  "..\\resources\\Tool - PFL.bmp"
+IDB_TOOL_QUERYBLOCKS    BITMAP                  "res\\TOOL - Query.bmp"
+IDB_TREE_CARTWALL       BITMAP                  "res\\Tree - Cartwall.bmp"
+IDB_TREE_FOLDER_JINGLE  BITMAP                  "res\\Tree - Folder Jingle.bmp"
+IDB_TREE_FOLDER_MUSIC   BITMAP                  "res\\Tree - Folder Music.bmp"
+IDB_TREE_FOLDER_RM      BITMAP                  "res\\Tree - Folder RM.bmp"
+IDB_TREE_FOLDER_SCHEDULE BITMAP                  "res\\Tree - Folder Schedule.bmp"
+IDB_TREE_FOLDER_SPOT    BITMAP                  "res\\Tree - Folder Spot.bmp"
+IDB_TREE_FOLDER_TEXT    BITMAP                  "res\\Tree - Folder Text.bmp"
+IDB_TREE_FOLDER_UNLISTED BITMAP                  "res\\Tree - Folder Unlisted.bmp"
+IDB_TREE_JINGLE         BITMAP                  "res\\Tree - Jingle.bmp"
+IDB_TREE_MUSIC          BITMAP                  "res\\Tree - Music.bmp"
+IDB_TREE_NEWSLINEUP     BITMAP                  "res\\Tree - News LineUp.bmp"
+IDB_TREE_RECORDINGTASK  BITMAP                  "res\\Tree - Recording Task.bmp"
+IDB_TREE_RM             BITMAP                  "res\\Tree - RM.bmp"
+IDB_TREE_SCHEDULE       BITMAP                  "res\\Tree - Schedule.bmp"
+IDB_TREE_SOUNDRECORDING BITMAP                  "res\\Tree - Sound Recording.bmp"
+IDB_TREE_SPOT           BITMAP                  "res\\Tree - Spot.bmp"
+IDB_TREE_TEXT           BITMAP                  "res\\Tree - Text.bmp"
+IDB_TREE_USER           BITMAP                  "res\\Tree - User.bmp"
+IDB_TOOL_NEWMUSIC       BITMAP                  "..\\resources\\New Music.bmp"
+IDB_TOOL_INFO           BITMAP                  "res\\Info.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Discography.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_TRAFFIC              "Programação"
+    ID_JINGLES_ONAIR        "Disponibilizar jingles para emissão"
+    ID_BLOCKS_MANAGEMENT    "Gestão de blocos publicitários"
+    ID_VIEW_AGENCY          "Gestão de Play-List"
+    ID_VIEW_SALESMAN        "Disponibilizar textos para a emissão"
+    ID_NEWSLINEUP           "Gerstão dos alinhamentos dos noticiários"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Mostrar a barra de estado"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Digital Broadcaster 2006"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOL_NEWSPOT        "Novo Spot"
+    IDS_TOOL_EDIT           "Editar"
+    IDS_TOOL_CUT            "Eliminar"
+    IDS_TOOL_NEWSCHEDULE    "Novo Programa"
+    IDS_TOOL_QUERYBLOCKS    "Pesquisa Blocos"
+    IDS_TOOL_NEWSOUND       "Nova Gravação"
+    IDS_TOOL_PFL            "Monição"
+    IDS_TOOL_NEWRM          "Novo RM"
+    IDS_TOOL_NEWTEXT        "Novo Texto"
+    IDS_TOOL_NEWLINEUP      "Novo Alinhamento"
+    IDS_TOOL_NEWJINGLE      "Novo Jingle"
+    IDS_TOOL_NEWBLOCK       "Novo Bloco"
+    IDS_TOOL_NEWPLAYLIST    "Nova Play List"
+    IDS_TOOL_NEWMUSIC       "Nova Musica"
+    IDS_TOOL_MUSICINFO      "Dados Estatisticos"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAFFICSCHEDULE     "* Calendarizações"
+    IDS_CUSTOMERSPOTS       "Spots do Cliente"
+    IDS_SPOTSTOSCHEDULE     "Spots a agendar"
+    IDS_AIRINGPERIOD        "Periodo de emissão"
+    IDS_AIRINGDAYS          "Dias a emitir"
+    IDS_SUN                 "Dom"
+    IDS_MON                 "Seg"
+    IDS_TUE                 "Ter"
+    IDS_WED                 "Qua"
+    IDS_THU                 "Qui"
+    IDS_FRI                 "Sex"
+    IDS_SAT                 "Sab"
+    IDS_BLOCKS              "Blocos de publicidade"
+    IDS_SELECTEDBLOCKS      "Blocos Seleccionados"
+    IDS_POSITION            "Posição"
+    IDS_SPOTSNUMBER         "Nº Spots"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_FROMTO       "de %d-%d-%d a %d-%d-%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SPOTSLENGTH         "Duração"
+    IDS_BLOCK               "Bloco de publicidade"
+    IDS_EMPTYSLOT           "Posição livre"
+    IDS_REFRESH             "* Actualizar"
+    IDS_SPONSORS            "Patrocinios"
+    IDS_RECORDINGS          "Ordens de gravação"
+    IDS_VOICEINSERT         "Take de locução"
+    IDS_RMSMANAGEMENT       "Gestão de RMs"
+    IDS_ONAIRRMS            "RM's em emissão"
+    IDS_TEXTMANAGEMENT      "Gestão de textos de informação"
+    IDS_ONAIRTEXT           "Textos em emissão"
+    IDS_NEWSLINEUP          "Alinhamentos noticiosos"
+    IDS_RMLINEUP            "Alinhamentos de RMs"
+    IDS_JINGLESMANAGEMENT   "Gestão de Jingles"
+    IDS_ONAIRJINGLES        "Jingles em Emissão"
+    IDS_BLOCKSMANAGEMENT    "Gestão de blocos"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fim"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIRMSCHEDULEREMOVE 
+                            "Tem a certeza que quer apagar esta calendarização."
+    IDS_CONFIRMSPONSORREMOVE 
+                            "Tem a certeza que pretende eliminar este patrocínio?\nEm caso afirmativo, o spot deixará de estar disponivel na emissão, mas continuará disponível na gestão de publicidade."
+    IDS_CANTDELETECUSTOMER  "Só poderá apagar um cliente, depois de apagar todos os seus spots!"
+    IDS_CONFIRMCUSTOMERREMOVE 
+                            "Tem a certeza que pretende apagar a ficha de cliente?"
+    IDS_CONFIRMSPOTREMOVE   "Tem a certeza que deseja apagar este spot?\nEm caso afirmativo, o spot será eliminado da base de dados e o respectivo áudio será marcado para posterior remoção."
+    IDS_NEWCUSTOMER         "Cliente inexistente!\nDeseja criar um novo cliente?"
+    IDS_NEWBUSINESS         "Actividade inexistente!\nDeseja criar uma nova actividade?"
+    IDS_NEWAGENCY           "Agencia inexistente!\nPretende criar uma nova agência?"
+    IDS_NEWVOICE            "Voz inexistente!\nPretende criar uma nova voz?"
+    IDS_NEWSALESMAN         "Vendedor inexistente!\nPretende criar um novo vendedor?"
+    IDS_SPONSORALLREADYEXISTS "O Spot já costa da lista de patrocinios!"
+    IDS_NEWTYPEOFRM         "O tipo de RM não existe!\nDeseja criar um novo tipo?"
+    IDS_CONFIRMRMREMOVE     "Tem a certeza que deseja apagar o RM?"
+    IDS_RMALLREADYEXISTS    "O RM já se encontra disponivel para emissão!"
+    IDS_CONFIRMTEXTREMOVE   "Tem a certeza que pretende apagar este texto?"
+    IDS_TEXTALLREADYEXISTS  "O Texto já se encontra disponivel na emissão!"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Digital Broadcaster 2006"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEWTEXT             "Este género não existe!\nDeseja criar um novo género para informação?"
+    IDS_CONFIRMRMLINEUPREMOVE 
+                            "Tem acerteza que pretende apagar este alinhamento?"
+    IDS_CONFIRMNEWSLINEUPREMOVE 
+                            "Tem a certeza que pretende apagar este alinhamento de noticias?"
+    IDS_CONFIRMJINGLEREMOVE "Tem a certeza que pretende apagar este Jingle?"
+    IDS_NEWTYPEOFJINGLE     "Tipo de Jingle inexistente! Deseja criar um novo tipo?"
+    IDS_JINGLEALLREADYEXISTS 
+                            "O Jingle já se encontra disponível para emissão!"
+    IDS_CONFIRMBLOCKREMOVE  "Tem a certeza que pretende apagar este bloco?"
+    IDS_CONFIRMPLAYLISTREMOVE 
+                            "Tem a certeza que pretende apagar esta Play List?"
+    IDS_CONFIRMREMOVERECORDINGTASK 
+                            "Tem a certeza que pretende eliminar esta ordem de gravação?"
+    IDS_NEWCATEGORY         "Este género de musica não existe!\nDeseja criar um novo género musical?"
+    IDS_NEWEXPRESSION       "Expressão inexistente!\nDeseja criar uma nova expressão?"
+    IDS_NEWRECORD           "Disco inexistente!\nDeseja criar um novo disco?"
+    IDS_NEWLABEL            "Editora inexistente!\nDeseja criar uma nova Editora?"
+    IDS_NEWARTIST           "Artista inexistente!\n Deseja criar um novo artista?"
+    IDS_COULDNOTRENAMEFILE  "Não foi possível alterar o nome do ficheiro de áudio. Quaisquer alterações feitas ao titulo ou ao artista da música, não foram gravadas!"
+    IDS_CONFIRMMUSICREMOVE  "Tem a certeza que pretende eliminar esta musica?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_JINGLES             "Jingles"
+    IDS_SPOTS               "Spots"
+    IDS_TIMESIGNAL          "Sinal Horario"
+    IDS_PLAYLISTMANAGEMENT  "Gestão de Play Lists"
+    IDS_DISCOGRAPHY         "Discografia"
+    IDS_NOTLISTED           "Música Não Listada"
+    IDS_JANUARY             "Janeiro"
+    IDS_FEBRUARY            "Fevereiro"
+    IDS_STRING2088          "Março"
+    IDS_STRING2089          "Abril"
+    IDS_STRING2090          "Maio"
+    IDS_STRING2091          "Junho"
+    IDS_STRING2092          "Julho"
+    IDS_STRING2093          "Agosto"
+    IDS_STRING2094          "Setembro"
+    IDS_STRING2095          "Outubro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING2096          "Novembro"
+    IDS_STRING2097          "Dezembro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIRMRECORDING    "Nada"
+    IDS_NEWNATIONALITY      "Nacionalidade inexistente!\nDeseja criar uma nova nacionalidade?"
+    IDS_CONFIRMDELETEFILE   "Tem a certeza que prentende eliminar esse ficheiro?"
+    IDS_DENIED              "Não tem permissão para realizar essa operação!"
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ARTIST DIALOG  0, 0, 421, 345
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Edición de fichas de interpretes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,110,7,304,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,23,100,15
+    EDITTEXT        IDC_ADRESS,110,41,304,42,ES_AUTOHSCROLL
+    COMBOBOX        IDC_NATIONALITY,110,85,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WWW,110,99,304,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,110,115,304,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LABEL,110,131,304,133,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FANCLUB,110,148,304,42,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARCKS,110,194,304,119,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,364,324,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,309,324,50,14
+    RTEXT           "Nombre:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Fecha de nacimiento:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    RTEXT           "Dirección:",IDC_STATIC,7,41,93,14,SS_CENTERIMAGE
+    RTEXT           "Nacionalidad:",IDC_STATIC,7,85,93,12,SS_CENTERIMAGE
+    RTEXT           "www:",IDC_STATIC,7,99,93,14,SS_CENTERIMAGE
+    RTEXT           "e-mail",IDC_STATIC,7,115,93,14,SS_CENTERIMAGE
+    RTEXT           "Club de Fans:",IDC_STATIC,7,148,93,12,SS_CENTERIMAGE
+    RTEXT           "Observaciones:",IDC_STATIC,7,194,93,12,SS_CENTERIMAGE
+    RTEXT           "Productora:",IDC_STATIC,7,131,93,12,SS_CENTERIMAGE
+END
+
+IDD_MUSIC DIALOG  0, 0, 496, 433
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VSCROLL
+CAPTION "Edición de Músicas"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,428,412,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,373,412,50,14
+    RTEXT           "Intérprete:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_ARTIST,110,7,368,120,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TITLE,110,21,368,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TYPE,110,40,368,146,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EXPRESSION,110,54,368,122,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_RYTHM,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,110,69,319,16
+    EDITTEXT        IDC_RYTHMV,430,68,48,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_CD,110,87,368,152,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LABEL,110,115,368,142,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PRODUCER,110,134,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPOSER,110,149,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LYRICS,110,164,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSICIANS,110,180,368,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_STUDIO,110,228,368,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARKS,110,244,368,47,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,100,368,15
+    RTEXT           "Título:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Género:",IDC_STATIC,7,40,93,12,SS_CENTERIMAGE
+    RTEXT           "Idioma:",IDC_STATIC,7,54,93,12,SS_CENTERIMAGE
+    RTEXT           "Ritmo",IDC_STATIC,7,69,93,16,SS_CENTERIMAGE
+    RTEXT           "CD:",IDC_STATIC,7,87,93,12,SS_CENTERIMAGE
+    RTEXT           "Fecha de grabación:",IDC_STATIC,7,100,93,12,SS_CENTERIMAGE
+    RTEXT           "Productora:",IDC_STATIC,7,115,93,12,SS_CENTERIMAGE
+    RTEXT           "Productor:",IDC_STATIC,7,134,93,14,SS_CENTERIMAGE
+    RTEXT           "Compositor:",IDC_STATIC,7,149,93,14,SS_CENTERIMAGE
+    RTEXT           "Letra:",IDC_STATIC,7,164,93,14,SS_CENTERIMAGE
+    RTEXT           "Músicos:",IDC_STATIC,7,180,93,14,SS_CENTERIMAGE
+    RTEXT           "Estudio:",IDC_STATIC,7,228,93,14,SS_CENTERIMAGE
+    RTEXT           "Observaciones:",IDC_STATIC,7,244,93,14,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ARTIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_MUSIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 426
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Discography.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

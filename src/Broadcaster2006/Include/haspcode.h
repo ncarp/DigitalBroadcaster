@@ -1,0 +1,20 @@
+#if !defined __HASPCODE_H
+#define __HASPCODE_H
+
+#define HASP_HASPPROTECTION 0
+#define	HASP_PASS1	24898
+#define HASP_PASS2	2751
+#define HASP_IDLOW	0
+#define HASP_IDHIGH 0
+
+#define HASP_WORKSTATION 0
+#define HASP_TIMEKEY 0
+#define HASP_TIMEONKEY 0
+#define HASP_4 0
+
+#define HASP_TIMEPROTECTION 0
+#define HASP_TIMECRASH 0
+int		HASP_TIME_YEAR	= 2013,
+		HASP_TIME_MONTH	= 7,
+		HASP_TIME_DAY	= 7;
+#endif

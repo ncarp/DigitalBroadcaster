@@ -1,0 +1,1340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\resources\\OnAir.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OnAir"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "OnAir Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,34,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "OnAir MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "OnAir"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "OnAir.EXE"
+            VALUE "ProductName", "OnAir Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040a04b0"
+        BEGIN
+            VALUE "FileDescription", "OnAir MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "OnAir"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "OnAir.EXE"
+            VALUE "ProductName", "OnAir Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40a, 1200
+    END
+END
+
+#endif    // Spanish (Castilian) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCHEDULE DIALOG  0, 0, 425, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,368,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,312,98,50,14
+    EDITTEXT        IDC_NAME,110,7,308,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_STARTINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,110,24,100,15
+    CONTROL         "DateTimePicker2",IDC_LENGTH,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,110,40,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 0x8,110,56,100,15
+    COMBOBOX        IDC_PRECISION,110,73,308,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Nome:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Hora de ínicio:",IDC_STATIC,7,24,93,14,SS_CENTERIMAGE
+    RTEXT           "Duração:",IDC_STATIC,7,40,93,14,SS_CENTERIMAGE
+    RTEXT           "Hora prevista p/ fim:",IDC_STATIC,7,56,93,14,SS_CENTERIMAGE
+    RTEXT           "Prioridade:",IDC_STATIC,7,73,93,14,SS_CENTERIMAGE
+END
+
+IDD_OPENCARTWALL DIALOG  0, 0, 296, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Abrir Cartwall"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,239,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,225,50,14
+    CONTROL         "Informação",IDC_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,282,10
+    LISTBOX         IDC_LIST1,7,21,282,194,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NEWSCHEDULE DIALOG  0, 0, 362, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Novo Programa"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,89,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,89,50,14
+    RTEXT           "Nome do Programa:",IDC_STATIC,7,7,69,14,SS_CENTERIMAGE
+    RTEXT           "Hora de inicio:",IDC_STATIC,7,22,69,14,SS_CENTERIMAGE
+    RTEXT           "Duração:",IDC_STATIC,7,38,69,14,SS_CENTERIMAGE
+    RTEXT           "Hora de fim:",IDC_STATIC,7,54,69,14,SS_CENTERIMAGE
+    RTEXT           "Prioridade:",IDC_STATIC,7,70,69,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,82,7,273,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_STARTINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,22,100,15
+    CONTROL         "DateTimePicker1",IDC_LENGTH,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,38,100,15
+    CONTROL         "DateTimePicker1",IDC_ENDINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,54,100,15
+    COMBOBOX        IDC_PRIORITY,82,70,273,82,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NEWCARTWALL DIALOG  0, 0, 313, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Novo Cartwall"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,256,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,37,50,14
+    EDITTEXT        IDC_NAME,7,7,299,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_OPENCARTWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_NEWSCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 76
+        VERTGUIDE, 82
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCHEDULE DLGINIT
+BEGIN
+    IDC_PRECISION, 0x403, 34, 0
+0x204f, 0x7270, 0x676f, 0x6172, 0x616d, 0x6120, 0x6163, 0x6162, 0x6e20, 
+0x2061, 0x6f68, 0x6172, 0x7020, 0x6572, 0x6976, 0x7473, 0x0061, 
+    IDC_PRECISION, 0x403, 46, 0
+0x204f, 0x7270, 0x676f, 0x6172, 0x616d, 0x7420, 0x7265, 0x20e1, 0x6573, 
+0x706d, 0x6572, 0x6120, 0x6420, 0x7275, 0xe761, 0x6fe3, 0x6520, 0x7073, 
+0x6365, 0x6669, 0x6369, 0x6461, 0x0061, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SUNDAY              "Domingo"
+    IDS_MONDAY              "Segunda"
+    IDS_TUESDAY             "Terça"
+    IDS_WEDNESDAY           "Quarta"
+    IDS_THURSDAY            "Quinta"
+    IDS_FRIDAY              "Sexta"
+    IDS_SATURDAY            "Sábado"
+    IDS_REFRESH             "Actualizar"
+    IDS_INFO                "Info"
+    IDS_REMOVE              "Remove"
+    IDS_PFL                 "PFL"
+    IDS_MOVEUP              "Adiantar"
+    IDS_MOVEDOWN            "Atrasar"
+    IDS_NEWSOUND            "Novo Som"
+    IDS_NEWCART             "Novo Cartwall"
+    IDS_SAVECART            "Guardar Alterações"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "Titúlo"
+    IDS_DURATION            "Duração"
+    IDS_INTRO               "Intro"
+    IDS_STARTINGTIME        "Inicio"
+    IDS_FULLAUTO            "Automático"
+    IDS_LIVEASSIST          "Live Assist"
+    IDS_MANUAL              "Manual"
+    IDS_MUSIC               "Música"
+    IDS_JINGLES             "Jingles"
+    IDS_TRAFFIC             "Publicidade"
+    IDS_CARTWALL            "Cartwall"
+    IDS_LINEUP              "Alinhamento"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_OLEINITFAILED "A inicialização do OLE falhou. A funcionalidade 'drag & drop' não estará disponível!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOBLOCK             "Sem bloco de publicidade!"
+    IDS_NOPROG              "Sem programa definido!"
+    IDS_NEXTBLOCK           "Próximo Bloco"
+    IDS_NEXTPROG            "Próximo Programa"
+    IDS_LINEUPLENGTH        "Duração Alinhamento"
+    IDS_NOWSHOWING          "Faixa Actual"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRODUCER            "Produção"
+    IDS_MUSIC_DISCOGRAPHY   "Discografia"
+    IDS_MUSIC_PLAYLIST      "Play List"
+    IDS_MUSIC_CATEGORY      "Género"
+    IDS_MUSIC_SEARCH        "Pesquisa Avançada"
+    IDS_PRODUCER_SOUNDRECORDER "Gravador de Voz"
+    IDS_PRODUCER_MUSICEDITING "Edição de Música"
+    IDS_PRODUCER_PROGRAMMING "Programação"
+    IDS_DEADLINE            "Deadline"
+    IDS_TRAFFIC_SPONSORS    "Patrocinios"
+    IDS_TRAFFIC_BLOCKS      "Blocos"
+    IDS_TRAFFIC_BUMPED      "Não Emitida"
+    IDS_VOICEINSERT         "Takes de Locução"
+    IDS_ARTIST              "Interprete:"
+    IDS_SONGTITLE           "Titulo:"
+    IDS_SOUNDFILE           "Ficheiro de Audio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADCART            "Abrir Cartwall"
+    IDS_DISCARD             "Anualar Alterações"
+    IDS_NEWSCHEDULE         "Novo Programa"
+    IDS_SPONSORBLOCKS       "Blocos de Patrocínios"
+    IDS_BACK                "Retroceder"
+    IDS_FOWARD              "Avançar"
+    IDS_STOP                "Parar"
+    IDS_NEWS                "Informação"
+    IDS_ADRESS              "Endereço"
+    IDS_NEWVOICEINSERT      "Novo Take"
+    IDS_EDITSCHEDULE        "Editar Programa"
+    IDS_EDITLINEUP          "Editar Alinhamento"
+    IDS_LOCK                "Bloquear Item"
+    IDS_SCHEDULE            "Programa"
+    IDS_EXIT                "Sair"
+    IDS_HELP                "Manual Online"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY            "Género:"
+    IDS_PLAYLIST            "Play List:"
+    IDS_EXPRESSION          "Expressão:"
+    IDS_LENGTH              "Duração:"
+    IDS_INTROT              "Intro:"
+    IDS_RYTHM               "Ritmo:"
+    IDS_CDTITLE             "CD:"
+    IDS_RECORDINGDATE       "Data:"
+    IDS_RECORDLABEL         "Editora:"
+    IDS_LYRICS              "Letra:"
+    IDS_MUSICCOMPOSER       "Compositor:"
+    IDS_MUSICPRODUCER       "Produtor:"
+    IDS_STUDIO              "Estudio:"
+    IDS_MUSICIANS           "Musicos:"
+    IDS_REMARKS             "Observações:"
+    IDS_JANUARY             "Janeiro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEWCATEGORY         "Esse género não foi encontrado! Deseja criar um novo género?"
+    IDS_NEWEXPRESSION       "Essa expressão não foi encontrada! Deseja criar uma nova expressão?"
+    IDS_NEWRECORD           "Esse CD não foi encontrado! Deseja criar um novo CD?"
+    IDS_NEWLABEL            "Essa editora não foi encontrada! Deseja criar uma nova editora?"
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEBRUARY            "Fevereiro"
+    IDS_MARCH               "Março"
+    IDS_APRIL               "Abril"
+    IDS_MAY                 "Maio"
+    IDS_JUNE                "Junho"
+    IDS_JULY                "Julho"
+    IDS_AUGUST              "Agosto"
+    IDS_SEPTEMBER           "Setembro"
+    IDS_OCTOBER             "Outubro"
+    IDS_NOVEMBER            "Novembro"
+    IDS_DECEMBER            "Dezembro"
+    IDS_DATE                "Data"
+    IDS_AIRED               "Emitidos"
+    IDS_RMS                 "RMs de Informação"
+    IDS_INTERNET            "Internet Browser"
+    IDS_TALENT              "Locutor:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fim"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+    IDS_SONGMANDATORY       "A introdução do género e da expressão da música são obrigatórios!"
+    IDS_STARTEXACT          "Começar exactamente na hora"
+    IDS_ENDEXACT            "Acabar exactamente na hora"
+    IDS_NOTEXACTLY          "Logo que possível"
+    IDS_MENULINEUP          "Alinhar"
+    IDS_MENUDELAY1          "Adiar 1 Minuto"
+    IDS_MENUDELAY2          "Adiar 2 Minutos"
+    IDS_MENUDELAY5          "Adiar 5 Minutos"
+    IDS_INFOCARTWALL        "Existe um cartwall de informação com esse nome!"
+    IDS_CONFIRMNEWCARTWALL  "Tem a certeza que pretende descartar a configuração actual do Cartwall?"
+    IDS_CARTWALLEXISTS      "Já existe um Cartwall com esse nome!\nPretende substitílo?"
+    IDS_MENUSKIPBLOCK       "Anular Bloco"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATH                "Localização:"
+    IDS_FILE                "Ficheiro:"
+    IDS_TIMESIGNAL          "Sinal Horário"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSKIPSCHEDULE    "Anular Programa"
+    IDS_FORMAT_SCHEDULETO   "Programa para %d-%d-%d"
+    IDS_CONFIRMRECORDING    "Qualquer audio previamente gravado será perdido!\nTem a certeza de que pretende continuar?"
+    IDS_HASPERROR           "Não foi encontrada a ficha de protecção do software!\n Esta aplicação será encerrada."
+    IDS_LOGON               "Iniciar Sessão"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEWSCHEDULE DIALOG  0, 0, 362, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Novo Programa"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,89,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,89,50,14
+    RTEXT           "Nome do Programa:",IDC_STATIC,7,7,69,14,SS_CENTERIMAGE
+    RTEXT           "Hora de inicio:",IDC_STATIC,7,22,69,14,SS_CENTERIMAGE
+    RTEXT           "Duração:",IDC_STATIC,7,38,69,14,SS_CENTERIMAGE
+    RTEXT           "Hora de fim:",IDC_STATIC,7,54,69,14,SS_CENTERIMAGE
+    RTEXT           "Prioridade:",IDC_STATIC,7,70,69,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,82,7,273,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_STARTINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,22,100,15
+    CONTROL         "DateTimePicker1",IDC_LENGTH,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,38,100,15
+    CONTROL         "DateTimePicker1",IDC_ENDINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,54,100,15
+    COMBOBOX        IDC_PRIORITY,82,70,273,82,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NEWCARTWALL DIALOG  0, 0, 313, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Novo Cartwall"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,256,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,37,50,14
+    EDITTEXT        IDC_NAME,7,7,299,14,ES_AUTOHSCROLL
+END
+
+IDD_OPENCARTWALL DIALOG  0, 0, 296, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Abrir Cartwall"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,239,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,225,50,14
+    CONTROL         "Informação",IDC_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,282,10
+    LISTBOX         IDC_LIST1,7,21,282,194,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SCHEDULE DIALOG  0, 0, 425, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,368,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,312,98,50,14
+    EDITTEXT        IDC_NAME,110,7,308,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_STARTINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,110,24,100,15
+    CONTROL         "DateTimePicker2",IDC_LENGTH,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,110,40,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 0x8,110,56,100,15
+    COMBOBOX        IDC_PRECISION,110,73,308,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Nome:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Hora de ínicio:",IDC_STATIC,7,24,93,14,SS_CENTERIMAGE
+    RTEXT           "Duração:",IDC_STATIC,7,40,93,14,SS_CENTERIMAGE
+    RTEXT           "Hora prevista p/ fim:",IDC_STATIC,7,56,93,14,SS_CENTERIMAGE
+    RTEXT           "Prioridade:",IDC_STATIC,7,73,93,14,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "081604b0"
+        BEGIN
+            VALUE "FileDescription", "OnAir MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "OnAir"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "OnAir.EXE"
+            VALUE "ProductName", "OnAir Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x816, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NEWSCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 76
+        VERTGUIDE, 82
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_NEWCARTWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_OPENCARTWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCHEDULE DLGINIT
+BEGIN
+    IDC_PRECISION, 0x403, 34, 0
+0x204f, 0x7270, 0x676f, 0x6172, 0x616d, 0x6120, 0x6163, 0x6162, 0x6e20, 
+0x2061, 0x6f68, 0x6172, 0x7020, 0x6572, 0x6976, 0x7473, 0x0061, 
+    IDC_PRECISION, 0x403, 46, 0
+0x204f, 0x7270, 0x676f, 0x6172, 0x616d, 0x7420, 0x7265, 0x20e1, 0x6573, 
+0x706d, 0x6572, 0x6120, 0x6420, 0x7275, 0xe761, 0x6fe3, 0x6520, 0x7073, 
+0x6365, 0x6669, 0x6369, 0x6461, 0x0061, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\logo-back.bmp"
+IDB_REFRESH             BITMAP                  "res\\refresh.BMP"
+IDB_REFRESH_HOT         BITMAP                  "res\\refresh-hot.bmp"
+IDB_MUSICFOLDER         BITMAP                  "res\\Folder-Music.bmp"
+IDB_MUSICSMALL          BITMAP                  "res\\Music.bmp"
+IDB_CONTAINER_MUSIC     BITMAP                  "res\\Container - Music.bmp"
+IDB_CONTAINER_JINGLES   BITMAP                  "res\\Container - jingles.bmp"
+IDB_CONTAINER_LINEUP    BITMAP                  "res\\Container - LineUp.bmp"
+IDB_CUE                 BITMAP                  "..\\resources\\Cue.bmp"
+IDB_GARBAGE             BITMAP                  "res\\Garbage.bmp"
+IDB_JINGLESMALL         BITMAP                  "res\\Jingle.bmp"
+IDB_PLAY                BITMAP                  "..\\resources\\Play.bmp"
+IDB_UNCUE               BITMAP                  "..\\resources\\UnCue.bmp"
+IDB_STOP                BITMAP                  "..\\resources\\Stop.bmp"
+IDB_MIX                 BITMAP                  "..\\resources\\Mix.bmp"
+IDB_PAUSE_ON            BITMAP                  "res\\Pause - On.bmp"
+IDB_PAUSE_OFF           BITMAP                  "res\\Pause - Off.bmp"
+IDB_LOOP_ON             BITMAP                  "res\\loop.bmp"
+IDB_LOOP_OFF            BITMAP                  "res\\loopgray.bmp"
+IDB_CONTAINER_PRODUCER  BITMAP                  "res\\Container - Producer.bmp"
+IDB_CONTAINER_TRAFFIC   BITMAP                  "res\\Container - Comercial.bmp"
+IDB_PFL                 BITMAP                  "res\\PFL.bmp"
+IDB_INFO                BITMAP                  "res\\Info.bmp"
+IDB_INFO_HOT            BITMAP                  "res\\Info-Hot.bmp"
+IDB_MOVEUP              BITMAP                  "res\\MoveUp.bmp"
+IDB_MOVEUP_HOT          BITMAP                  "res\\MoveUp-Hot.bmp"
+IDB_MOVEDOWN            BITMAP                  "res\\MoveDown.bmp"
+IDB_MOVEDOWN_HOT        BITMAP                  "res\\MoveDown-Hot.bmp"
+IDB_THUMB_VOL           BITMAP                  "res\\Thumb-Volume.bmp"
+IDB_MANUAL              BITMAP                  "..\\resources\\Manual.bmp"
+IDB_AUTOMATIC           BITMAP                  "..\\resources\\Automatic.bmp"
+IDB_LIVE                BITMAP                  "..\\resources\\Live-Assist.bmp"
+IDB_CONTAINER_CARTWALL  BITMAP                  "res\\Container - CARTWALL.bmp"
+IDB_NEW_SOUND           BITMAP                  "res\\New Sound.bmp"
+IDB_CONTAINER_MUSICFOLDER BITMAP                "res\\Container - Music Folder.bmp"
+IDB_CONTAINER_MUSICSEARCH BITMAP                "res\\Container - Music Search.bmp"
+IDB_CONTAINER_SCHEDULING BITMAP                 "res\\Container - Scheduling.bmp"
+IDB_DISCARD             BITMAP                  "res\\Discard.bmp"
+IDB_SAVE                BITMAP                  "res\\save.bmp"
+IDB_LOAD                BITMAP                  "res\\load.bmp"
+IDB_NEW                 BITMAP                  "res\\new.bmp"
+IDB_REC                 BITMAP                  "res\\Rec.bmp"
+IDB_PAUSE_BIG           BITMAP                  "res\\Pause - Big.bmp"
+IDB_SPOT                BITMAP                  "res\\Spot.bmp"
+IDB_CONTAINER_BLOCKS    BITMAP                  "res\\Container - Blocks.bmp"
+IDB_CONTAINER_VOICEINSERT BITMAP                "res\\Container - Voice Insert.bmp"
+IDB_VOICEINSERT         BITMAP                  "res\\Voice Insert.bmp"
+IDB_NEWSCHEDULE         BITMAP                  "res\\New Scheduling.bmp"
+IDB_SORTASC             BITMAP                  "res\\bitmap1.bmp"
+IDB_SORTDESC            BITMAP                  "res\\sortasc1.bmp"
+IDB_CONTAINER_AIRED     BITMAP                  "res\\Container - Aired.bmp"
+IDB_CONTAINER_INTERNET  BITMAP                  "res\\Container - Internet.bmp"
+IDB_CONTAINER_RMS       BITMAP                  "res\\Container - RMS.bmp"
+IDB_CUT                 BITMAP                  "res\\CUT.bmp"
+IDB_CONTAINER_BUMPED    BITMAP                  "res\\Container - Bumped.bmp"
+IDB_BACK                BITMAP                  "res\\Back.bmp"
+IDB_FOWARD              BITMAP                  "res\\Foward.bmp"
+IDB_EDIT                BITMAP                  "res\\Tool - Edit.bmp"
+IDB_LOCK                BITMAP                  "res\\Tool - Lock.bmp"
+IDB_EXIT                BITMAP                  "res\\Exit.bmp"
+IDB_TREE_LOCK           BITMAP                  "res\\Tree - Lock.bmp"
+IDB_RECOFF              BITMAP                  "res\\Rec Off.bmp"
+IDB_TIMESIGNAL          BITMAP                  "res\\TimeSignal.bmp"
+IDB_TOOL_QUERY          BITMAP                  "res\\TOOL - Query.bmp"
+IDB_LOGO_TOP            BITMAP                  "res\\Logo-top.bmp"
+IDB_LOGO_RADIO          BITMAP                  "..\\resources\\logo-radio.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OnAir.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR              CURSOR                  "res\\arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SUNDAY              "Domingo"
+    IDS_MONDAY              "Segunda"
+    IDS_TUESDAY             "Terça"
+    IDS_WEDNESDAY           "Quarta"
+    IDS_THURSDAY            "Quinta"
+    IDS_FRIDAY              "Sexta"
+    IDS_SATURDAY            "Sábado"
+    IDS_REFRESH             "Actualizar"
+    IDS_INFO                "Info"
+    IDS_REMOVE              "Remove"
+    IDS_PFL                 "PFL"
+    IDS_MOVEUP              "Adiantar"
+    IDS_MOVEDOWN            "Atrasar"
+    IDS_NEWSOUND            "Novo Som"
+    IDS_NEWCART             "Novo Cartwall"
+    IDS_SAVECART            "Guardar Alterações"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "Titúlo"
+    IDS_DURATION            "Duração"
+    IDS_INTRO               "Intro"
+    IDS_STARTINGTIME        "Inicio"
+    IDS_FULLAUTO            "Automático"
+    IDS_LIVEASSIST          "Live Assist"
+    IDS_MANUAL              "Manual"
+    IDS_MUSIC               "Música"
+    IDS_JINGLES             "Jingles"
+    IDS_TRAFFIC             "Publicidade"
+    IDS_CARTWALL            "Cartwall"
+    IDS_LINEUP              "Alinhamento"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_OLEINITFAILED "A inicialização do OLE falhou. A funcionalidade 'drag & drop' não estará disponível!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOBLOCK             "Sem bloco de publicidade!"
+    IDS_NOPROG              "Sem programa definido!"
+    IDS_NEXTBLOCK           "Próximo Bloco"
+    IDS_NEXTPROG            "Próximo Programa"
+    IDS_LINEUPLENGTH        "Duração Alinhamento"
+    IDS_NOWSHOWING          "Faixa Actual"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRODUCER            "Produção"
+    IDS_MUSIC_DISCOGRAPHY   "Discografia"
+    IDS_MUSIC_PLAYLIST      "Play List"
+    IDS_MUSIC_CATEGORY      "Género"
+    IDS_MUSIC_SEARCH        "Pesquisa Avançada"
+    IDS_PRODUCER_SOUNDRECORDER "Gravador de Voz"
+    IDS_PRODUCER_MUSICEDITING "Edição de Música"
+    IDS_PRODUCER_PROGRAMMING "Programação"
+    IDS_DEADLINE            "Deadline"
+    IDS_TRAFFIC_SPONSORS    "Patrocinios"
+    IDS_TRAFFIC_BLOCKS      "Blocos"
+    IDS_TRAFFIC_BUMPED      "Não Emitida"
+    IDS_VOICEINSERT         "Takes de Locução"
+    IDS_ARTIST              "Interprete:"
+    IDS_SONGTITLE           "Titulo:"
+    IDS_SOUNDFILE           "Ficheiro de Audio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADCART            "Abrir Cartwall"
+    IDS_DISCARD             "Anualar Alterações"
+    IDS_NEWSCHEDULE         "Novo Programa"
+    IDS_SPONSORBLOCKS       "Blocos de Patrocínios"
+    IDS_BACK                "Retroceder"
+    IDS_FOWARD              "Avançar"
+    IDS_STOP                "Parar"
+    IDS_NEWS                "Informação"
+    IDS_ADRESS              "Endereço"
+    IDS_NEWVOICEINSERT      "Novo Take"
+    IDS_EDITSCHEDULE        "Editar Programa"
+    IDS_EDITLINEUP          "Editar Alinhamento"
+    IDS_LOCK                "Bloquear Item"
+    IDS_SCHEDULE            "Programa"
+    IDS_EXIT                "Sair"
+    IDS_HELP                "Manual Online"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY            "Género:"
+    IDS_PLAYLIST            "Play List:"
+    IDS_EXPRESSION          "Expressão:"
+    IDS_LENGTH              "Duração:"
+    IDS_INTROT              "Intro:"
+    IDS_RYTHM               "Ritmo:"
+    IDS_CDTITLE             "CD:"
+    IDS_RECORDINGDATE       "Data:"
+    IDS_RECORDLABEL         "Editora:"
+    IDS_LYRICS              "Letra:"
+    IDS_MUSICCOMPOSER       "Compositor:"
+    IDS_MUSICPRODUCER       "Produtor:"
+    IDS_STUDIO              "Estudio:"
+    IDS_MUSICIANS           "Musicos:"
+    IDS_REMARKS             "Observações:"
+    IDS_JANUARY             "Janeiro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEWCATEGORY         "Esse género não foi encontrado! Deseja criar um novo género?"
+    IDS_NEWEXPRESSION       "Essa expressão não foi encontrada! Deseja criar uma nova expressão?"
+    IDS_NEWRECORD           "Esse CD não foi encontrado! Deseja criar um novo CD?"
+    IDS_NEWLABEL            "Essa editora não foi encontrada! Deseja criar uma nova editora?"
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEBRUARY            "Fevereiro"
+    IDS_MARCH               "Março"
+    IDS_APRIL               "Abril"
+    IDS_MAY                 "Maio"
+    IDS_JUNE                "Junho"
+    IDS_JULY                "Julho"
+    IDS_AUGUST              "Agosto"
+    IDS_SEPTEMBER           "Setembro"
+    IDS_OCTOBER             "Outubro"
+    IDS_NOVEMBER            "Novembro"
+    IDS_DECEMBER            "Dezembro"
+    IDS_DATE                "Data"
+    IDS_AIRED               "Emitidos"
+    IDS_RMS                 "RMs de Informação"
+    IDS_INTERNET            "Internet Browser"
+    IDS_TALENT              "Locutor:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fim"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+    IDS_SONGMANDATORY       "A introdução do género e da expressão da música são obrigatórios!"
+    IDS_STARTEXACT          "Começar na hora"
+    IDS_ENDEXACT            "Acabar na hora"
+    IDS_NOTEXACTLY          "Logo que possível"
+    IDS_MENULINEUP          "Alinhar"
+    IDS_MENUDELAY1          "Adiar 1 Minuto"
+    IDS_MENUDELAY2          "Adiar 2 Minutos"
+    IDS_MENUDELAY5          "Adiar 5 Minutos"
+    IDS_INFOCARTWALL        "Existe um cartwall de informação com esse nome!"
+    IDS_CONFIRMNEWCARTWALL  "Tem a certeza que pretende descartar a configuração actual do Cartwall?"
+    IDS_CARTWALLEXISTS      "Já existe um Cartwall com esse nome!\nPretende substitílo?"
+    IDS_MENUSKIPBLOCK       "Anular Bloco"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATH                "Localização:"
+    IDS_FILE                "Ficheiro:"
+    IDS_TIMESIGNAL          "Sinal Horário"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSKIPSCHEDULE    "Anular Programa"
+    IDS_FORMAT_SCHEDULETO   "Programa para %d-%d-%d"
+    IDS_CONFIRMRECORDING    "Qualquer audio previamente gravado será perdido!\nTem a certeza de que pretende continuar?"
+    IDS_HASPERROR           "Não foi encontrada a ficha de protecção do software!\n Esta aplicação será encerrada."
+    IDS_LOGON               "Iniciar Sessão"
+    IDS_CONTENT             "Conteudo"
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEWCARTWALL DIALOG  0, 0, 313, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Nuevo Cartuchero"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,256,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,37,50,14
+    EDITTEXT        IDC_NAME,7,7,299,14,ES_AUTOHSCROLL
+END
+
+IDD_NEWSCHEDULE DIALOG  0, 0, 362, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nuevo Programa"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,89,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,89,50,14
+    RTEXT           "Nombre del Programa:",IDC_STATIC,7,7,69,14,SS_CENTERIMAGE
+    RTEXT           "Hora de inicio:",IDC_STATIC,7,22,69,14,SS_CENTERIMAGE
+    RTEXT           "Duración:",IDC_STATIC,7,38,69,14,SS_CENTERIMAGE
+    RTEXT           "Hora de finalización:",IDC_STATIC,7,54,69,14,SS_CENTERIMAGE
+    RTEXT           "Prioridad:",IDC_STATIC,7,70,69,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,82,7,273,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_STARTINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,22,100,15
+    CONTROL         "DateTimePicker1",IDC_LENGTH,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,38,100,15
+    CONTROL         "DateTimePicker1",IDC_ENDINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,82,54,100,15
+    COMBOBOX        IDC_PRIORITY,82,70,273,82,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPENCARTWALL DIALOG  0, 0, 296, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Abrir Cartuchero"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,239,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,225,50,14
+    CONTROL         "Información",IDC_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,282,10
+    LISTBOX         IDC_LIST1,7,21,282,194,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SCHEDULE DIALOG  0, 0, 425, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,368,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,312,98,50,14
+    EDITTEXT        IDC_NAME,110,7,308,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_STARTINGTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,110,24,100,15
+    CONTROL         "DateTimePicker2",IDC_LENGTH,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,110,40,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 0x8,110,56,100,15
+    COMBOBOX        IDC_PRECISION,110,73,308,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Nombre:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Hora de inicio:",IDC_STATIC,7,24,93,14,SS_CENTERIMAGE
+    RTEXT           "Duración:",IDC_STATIC,7,40,93,14,SS_CENTERIMAGE
+    RTEXT           "Hora prevista para fin:",IDC_STATIC,7,56,93,14,SS_CENTERIMAGE
+    RTEXT           "Prioridad:",IDC_STATIC,7,73,93,14,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NEWCARTWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_NEWSCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 76
+        VERTGUIDE, 82
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_OPENCARTWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCHEDULE DLGINIT
+BEGIN
+    IDC_PRECISION, 0x403, 34, 0
+0x204f, 0x7270, 0x676f, 0x6172, 0x616d, 0x6120, 0x6163, 0x6162, 0x6e20, 
+0x2061, 0x6f68, 0x6172, 0x7020, 0x6572, 0x6976, 0x7473, 0x0061, 
+    IDC_PRECISION, 0x403, 46, 0
+0x204f, 0x7270, 0x676f, 0x6172, 0x616d, 0x7420, 0x7265, 0x20e1, 0x6573, 
+0x706d, 0x6572, 0x6120, 0x6420, 0x7275, 0xe761, 0x6fe3, 0x6520, 0x7073, 
+0x6365, 0x6669, 0x6369, 0x6461, 0x0061, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SUNDAY              "Domingo"
+    IDS_MONDAY              "Lunes"
+    IDS_TUESDAY             "Martes"
+    IDS_WEDNESDAY           "Miercoles"
+    IDS_THURSDAY            "Jueves"
+    IDS_FRIDAY              "Viernes"
+    IDS_SATURDAY            "Sábado"
+    IDS_REFRESH             "Actualizar"
+    IDS_INFO                "Info"
+    IDS_REMOVE              "Eliminar"
+    IDS_PFL                 "PFL"
+    IDS_MOVEUP              "Adelantar"
+    IDS_MOVEDOWN            "Retrasar"
+    IDS_NEWSOUND            "Nuevo Sonido"
+    IDS_NEWCART             "Nuevo Cartuchero"
+    IDS_SAVECART            "Guardar Alteraciones"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "Título"
+    IDS_DURATION            "Duración"
+    IDS_INTRO               "Intro"
+    IDS_STARTINGTIME        "Inicio"
+    IDS_FULLAUTO            "Automático"
+    IDS_LIVEASSIST          "Live Assist"
+    IDS_MANUAL              "Manual"
+    IDS_MUSIC               "Música"
+    IDS_JINGLES             "Jingles"
+    IDS_TRAFFIC             "Publicidad"
+    IDS_CARTWALL            "Cartuchero"
+    IDS_LINEUP              "Alineamiento"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_OLEINITFAILED "La inicialización de OLE ha fallado. ¡La funcionalidad 'drag & drop' no estará disponible!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOBLOCK             "¡Sin bloque de publicidad!"
+    IDS_NOPROG              "¡Sin programa definido!"
+    IDS_NEXTBLOCK           "Próximo Bloque"
+    IDS_NEXTPROG            "Próximo Programa"
+    IDS_LINEUPLENGTH        "Duración Alineamiento"
+    IDS_NOWSHOWING          "Corte Actual"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRODUCER            "Producción"
+    IDS_MUSIC_DISCOGRAPHY   "Discografía"
+    IDS_MUSIC_PLAYLIST      "Play List"
+    IDS_MUSIC_CATEGORY      "Género"
+    IDS_MUSIC_SEARCH        "Busqueda Avanzada"
+    IDS_PRODUCER_SOUNDRECORDER "Grabador de Voz"
+    IDS_PRODUCER_MUSICEDITING "Edición de Música"
+    IDS_PRODUCER_PROGRAMMING "Programación"
+    IDS_DEADLINE            "Deadline"
+    IDS_TRAFFIC_SPONSORS    "Patrocinios"
+    IDS_TRAFFIC_BLOCKS      "Bloques"
+    IDS_TRAFFIC_BUMPED      "No Emitida"
+    IDS_VOICEINSERT         "Takes de Locución"
+    IDS_ARTIST              "Interprete:"
+    IDS_SONGTITLE           "Título:"
+    IDS_SOUNDFILE           "Archivo de Audio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADCART            "Abrir Cartuchero"
+    IDS_DISCARD             "Anualar Alteraciones"
+    IDS_NEWSCHEDULE         "Nuevo Programa"
+    IDS_SPONSORBLOCKS       "Bloques de Patrocinios"
+    IDS_BACK                "Retroceder"
+    IDS_FOWARD              "Avanzar"
+    IDS_STOP                "Parar"
+    IDS_NEWS                "Información"
+    IDS_ADRESS              "Dirección"
+    IDS_NEWVOICEINSERT      "Nuevo Take"
+    IDS_EDITSCHEDULE        "Editar Programa"
+    IDS_EDITLINEUP          "Editar Alineamiento"
+    IDS_LOCK                "Bloquear Item"
+    IDS_SCHEDULE            "Programa"
+    IDS_EXIT                "Salir"
+    IDS_HELP                "Ayuda"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY            "Género:"
+    IDS_PLAYLIST            "Play List:"
+    IDS_EXPRESSION          "Idioma:"
+    IDS_LENGTH              "Duración:"
+    IDS_INTROT              "Intro:"
+    IDS_RYTHM               "Ritmo:"
+    IDS_CDTITLE             "CD:"
+    IDS_RECORDINGDATE       "Fecha:"
+    IDS_RECORDLABEL         "Productora:"
+    IDS_LYRICS              "Letra:"
+    IDS_MUSICCOMPOSER       "Compositor:"
+    IDS_MUSICPRODUCER       "Productor:"
+    IDS_STUDIO              "Estudio:"
+    IDS_MUSICIANS           "Músicos:"
+    IDS_REMARKS             "Observaciones:"
+    IDS_JANUARY             "Enero"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEWCATEGORY         "¡Ese género no ha sido encontrado! ¿Desea crear un nuevo género?"
+    IDS_NEWEXPRESSION       "¡Ese idioma no ha sido encontrado! ¿Desea crear un nuevo idioma?"
+    IDS_NEWRECORD           "¡Ese CD no ha sido encontrado! ¿Desea crear un nuevo CD?"
+    IDS_NEWLABEL            "¡Esa productora no ha sido encontrada! ¿Desea crear una nueva productora?"
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEBRUARY            "Febrero"
+    IDS_MARCH               "Marzo"
+    IDS_APRIL               "Abril"
+    IDS_MAY                 "Mayo"
+    IDS_JUNE                "Junio"
+    IDS_JULY                "Julio"
+    IDS_AUGUST              "Agosto"
+    IDS_SEPTEMBER           "Setiembre"
+    IDS_OCTOBER             "Octubre"
+    IDS_NOVEMBER            "Noviembre"
+    IDS_DECEMBER            "Diciembre"
+    IDS_DATE                "Fecha"
+    IDS_AIRED               "Emitidos"
+    IDS_RMS                 "RM's de Información"
+    IDS_INTERNET            "Internet Browser"
+    IDS_TALENT              "Locutor:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fin"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+    IDS_SONGMANDATORY       " ¡La introducción del género y del idioma de la música son obligatorios!"
+    IDS_STARTEXACT          "Comenzar exactamente a la hora"
+    IDS_ENDEXACT            "Acabar exactamente a la hora"
+    IDS_NOTEXACTLY          "Lo más exacto posible"
+    IDS_MENULINEUP          "Alinear"
+    IDS_MENUDELAY1          "Retrasar 1 Minuto"
+    IDS_MENUDELAY2          "Retrasar 2 Minutos"
+    IDS_MENUDELAY5          "Retrasar 5 Minutos"
+    IDS_INFOCARTWALL        "¡Ya existe un cartuchero de información con ese nombre!"
+    IDS_CONFIRMNEWCARTWALL  "¿Está seguro de querer eliminar la configuración actual del Cartuchero?"
+    IDS_CARTWALLEXISTS      "¡Ya existe un Cartuchero con ese nombre!\n¿Desea sustituirlo?"
+    IDS_MENUSKIPBLOCK       "Anular Bloque"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATH                "Localización:"
+    IDS_FILE                "Archivo:"
+    IDS_TIMESIGNAL          "Señal Horaria"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSKIPSCHEDULE    "Anular Programa"
+    IDS_FORMAT_SCHEDULETO   "Programa para %d-%d-%d"
+    IDS_CONFIRMRECORDING    "¡Se perderá cualquier audio previamente grabado!\n¿Está seguro de querer continuar?"
+    IDS_HASPERROR           "No se ha encontrado la llave de protección del software!\nEsta aplicación se cerrará."
+    IDS_LOGON               "Iniciar Sesión"
+    IDS_CONTENT             "Contenido"
+END
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OnAir.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,264 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Conversao"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Conversao Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CONVERSAO_DIALOG DIALOGEX 0, 0, 320, 316
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Conversao"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,263,292,50,17
+    PUSHBUTTON      "Cancel",IDCANCEL,207,293,50,16
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,265,306,22
+    CONTROL         "Progress2",IDC_PROGRESS2,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,249,306,14
+    CTEXT           "Static",IDC_TEXTO,7,235,306,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_TITULO,7,220,306,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "Discos CFG",IDC_DISCOS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,69,287,10
+    CONTROL         "Tipos.cfg",IDC_GENEROS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,80,287,10
+    CONTROL         "Nacionalidades",IDC_NACIONALIDADES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,91,287,10
+    CONTROL         "Editoras",IDC_EDITORAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,102,287,10
+    CONTROL         "Interpretes",IDC_INTERPRETES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,113,287,10
+    CONTROL         "Listas de Musica",IDC_LISTAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,124,287,10
+    CONTROL         "Musicas",IDC_FAIXAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,135,287,10
+    CONTROL         "Jingles",IDC_JINGLES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,146,287,10
+    CONTROL         "Vendedores",IDC_Vendedores,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,18,157,287,10
+    CONTROL         "Agencias de publicidade",IDC_Agencias,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,168,287,10
+    CONTROL         "Actividades Comerciais",IDC_ACTIVIDADES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,179,287,10
+    CONTROL         "Clientes",IDC_Clientes,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,190,287,10
+    CONTROL         "Spots Comerciais",IDC_SPOTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,201,287,10
+    GROUPBOX        "Bases de dados que serão convertidas",IDC_STATIC,7,57,
+                    306,159
+    GROUPBOX        "Opções",IDC_STATIC,7,7,306,49
+    CONTROL         "Converter Ficheiros Audio",IDC_CONVERTAUDIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,28,287,10
+    CONTROL         "Eliminar Ficheiros Originais",IDC_DELETEORIGINAL,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,33,39,272,10
+    CONTROL         "Converter Ficheiros Audio",IDC_CONVERTAUDIO3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,29,287,10
+    CONTROL         "Verificar Existência de Audio",IDC_AUDIOEXISTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,17,287,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Conversao MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Conversao\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Conversao.EXE\0"
+            VALUE "ProductName", "Conversao Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CONVERSAO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 18
+        VERTGUIDE, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Conversao..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Conversao.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "..\\resources\\Conversao.ico"
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Conversao.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

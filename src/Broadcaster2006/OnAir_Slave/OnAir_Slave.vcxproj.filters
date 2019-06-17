@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e80108e3-3a91-4433-9369-2c66457e42ed}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{55465464-03f9-49ec-a0b1-bf2b0532d059}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{720b3594-84e9-4515-841e-c940928b5b08}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\OnAir\AiredListBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\AiredWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\AudioStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\LineUpListBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\LineUpWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\MainClockWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Mp3File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\MusicInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAir_Slave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAirContainerWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\OnAirDefines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\OnAirDropTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\OnAirHtml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\OnAirPlayerWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAirSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Permissions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\PFLWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\PlayerButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\PlayerOptionsWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\ProgInfoWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSBlocksComposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSBlocksDefinition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\rscomputers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSOnAirLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSRadioStations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSSchedule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSScheduleHeadline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\rssystemusers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\RSViewInstrumentals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\RSViewJinglesDataOnAir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\RSViewMusicDataPlaying.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSViewRecordings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSViewRms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSViewSchedule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\RSViewSpotOnAirData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSViewTimeSignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSViewTraffic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\RSViewVoiceInsertOnAir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\splitter_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitterConfigDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitterLogo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\TrafficInfoWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\typeLineUpItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnAir\VolumeSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\WaveFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\WaveIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mixer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MixerWasapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OnAir_Slave.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnAir_Slave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnAirContainerWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OnAir\OnAirDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnAirSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OnAir\ProgInfoWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Include\splitter_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitterConfigDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitterLogo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mixer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MixerWasapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Automatic.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Back.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Config.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Aired.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Blocks.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Bumped.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - CARTWALL.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Comercial.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Internet.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - jingles.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - LineUp.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Music Folder.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Music Search.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Music.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Producer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - RMS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Scheduling.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Container - Voice Insert.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Cue.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CUT.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Discard.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Drm5 - logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Exit.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Folder-Music.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Foward.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Garbage.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Info-Hot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Info.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Jingle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Live-Assist.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\load.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\logo_splitter.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\loop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\loopgray.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Manual.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Mix.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MoveDown-Hot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MoveDown.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MoveUp-Hot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MoveUp.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Music.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\New Scheduling.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\New Sound.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\new.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OnAir_Slave.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OnAir_Slave.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Pause - Big.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Pause - Off.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Pause - On.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PFL.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Play.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Rec Off.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Rec.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\refresh-hot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\refresh.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\save.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Spot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Stop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Thumb-Volume.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TimeSignal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Edit.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Lock.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TOOL - Query.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Lock.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\UnCue.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Voice Insert.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\Hasp\hasp32b.obj" />
+    <Object Include="..\Hasp\haspms32.obj" />
+  </ItemGroup>
+</Project>

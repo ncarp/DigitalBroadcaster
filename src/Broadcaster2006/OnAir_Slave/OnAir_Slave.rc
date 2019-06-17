@@ -1,0 +1,623 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OnAir_Slave.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OnAir_Slave...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OnAir_Slave"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "OnAir_Slave Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "OnAir_Slave MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "OnAir_Slave"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "OnAir_Slave.EXE"
+            VALUE "ProductName", "OnAir_Slave Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "OnAir_Slave"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "OnAir_Slave"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 261, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Configuração"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,147,102,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,102,50,14
+    COMBOBOX        IDC_AUDIO,80,28,174,88,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Controlar Mixer",IDC_MIXERENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,81,58,145,10
+    GROUPBOX        "Mixer",IDC_STATIC,7,48,247,40
+    COMBOBOX        IDC_LINEIN,81,70,173,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Saída Audio",IDC_STATIC,7,30,65,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_RADIO,80,7,174,87,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Rádio:",IDC_STATIC,7,9,65,8,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        VERTGUIDE, 81
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OnAir_Slave.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_AUTOMATIC           BITMAP                  "res\\Automatic.bmp"
+IDB_BACK                BITMAP                  "res\\Back.bmp"
+IDB_CONTAINER_AIRED     BITMAP                  "res\\Container - Aired.bmp"
+IDB_CONTAINER_BLOCKS    BITMAP                  "res\\Container - Blocks.bmp"
+IDB_CONTAINER_BUMPED    BITMAP                  "res\\Container - Bumped.bmp"
+IDB_CONTAINER_CARTWALL  BITMAP                  "res\\Container - CARTWALL.bmp"
+IDB_CONTAINER_INTERNET  BITMAP                  "res\\Container - Internet.bmp"
+IDB_CONTAINER_JINGLES   BITMAP                  "res\\Container - jingles.bmp"
+IDB_CONTAINER_LINEUP    BITMAP                  "res\\Container - LineUp.bmp"
+IDB_CONTAINER_MUSIC     BITMAP                  "res\\Container - Music.bmp"
+IDB_CONTAINER_MUSICFOLDER BITMAP                  "res\\Container - Music Folder.bmp"
+IDB_CONTAINER_MUSICSEARCH BITMAP                  "res\\Container - Music Search.bmp"
+IDB_CONTAINER_PRODUCER  BITMAP                  "res\\Container - Producer.bmp"
+IDB_CONTAINER_RMS       BITMAP                  "res\\Container - RMS.bmp"
+IDB_CONTAINER_SCHEDULING BITMAP                  "res\\Container - Scheduling.bmp"
+IDB_CONTAINER_TRAFFIC   BITMAP                  "res\\Container - Comercial.bmp"
+IDB_CONTAINER_VOICEINSERT BITMAP                  "res\\Container - Voice Insert.bmp"
+IDB_CUE                 BITMAP                  "res\\Cue.bmp"
+IDB_CUT                 BITMAP                  "res\\CUT.bmp"
+IDB_DISCARD             BITMAP                  "res\\Discard.bmp"
+IDB_EDIT                BITMAP                  "res\\Tool - Edit.bmp"
+IDB_EXIT                BITMAP                  "res\\Exit.bmp"
+IDB_FOWARD              BITMAP                  "res\\Foward.bmp"
+IDB_GARBAGE             BITMAP                  "res\\Garbage.bmp"
+IDB_INFO                BITMAP                  "res\\Info.bmp"
+IDB_INFO_HOT            BITMAP                  "res\\Info-Hot.bmp"
+IDB_JINGLESMALL         BITMAP                  "res\\Jingle.bmp"
+IDB_LIVE                BITMAP                  "res\\Live-Assist.bmp"
+IDB_LOAD                BITMAP                  "res\\load.bmp"
+IDB_LOCK                BITMAP                  "res\\Tool - Lock.bmp"
+IDB_LOGO                BITMAP                  "res\\logo_splitter.bmp"
+IDB_LOOP_OFF            BITMAP                  "res\\loopgray.bmp"
+IDB_LOOP_ON             BITMAP                  "res\\loop.bmp"
+IDB_MANUAL              BITMAP                  "res\\Manual.bmp"
+IDB_MIX                 BITMAP                  "res\\Mix.bmp"
+IDB_MOVEDOWN            BITMAP                  "res\\MoveDown.bmp"
+IDB_MOVEDOWN_HOT        BITMAP                  "res\\MoveDown-Hot.bmp"
+IDB_MOVEUP              BITMAP                  "res\\MoveUp.bmp"
+IDB_MOVEUP_HOT          BITMAP                  "res\\MoveUp-Hot.bmp"
+IDB_MUSICFOLDER         BITMAP                  "res\\Folder-Music.bmp"
+IDB_MUSICSMALL          BITMAP                  "res\\Music.bmp"
+IDB_NEW                 BITMAP                  "res\\new.bmp"
+IDB_NEW_SOUND           BITMAP                  "res\\New Sound.bmp"
+IDB_NEWSCHEDULE         BITMAP                  "res\\New Scheduling.bmp"
+IDB_PAUSE_BIG           BITMAP                  "res\\Pause - Big.bmp"
+IDB_PAUSE_OFF           BITMAP                  "res\\Pause - Off.bmp"
+IDB_PAUSE_ON            BITMAP                  "res\\Pause - On.bmp"
+IDB_PFL                 BITMAP                  "res\\PFL.bmp"
+IDB_PLAY                BITMAP                  "res\\Play.bmp"
+IDB_REC                 BITMAP                  "res\\Rec.bmp"
+IDB_RECOFF              BITMAP                  "res\\Rec Off.bmp"
+IDB_REFRESH             BITMAP                  "res\\refresh.BMP"
+IDB_REFRESH_HOT         BITMAP                  "res\\refresh-hot.bmp"
+IDB_SAVE                BITMAP                  "res\\save.bmp"
+IDB_SORTASC             BITMAP                  "res\\bitmap1.bmp"
+IDB_SORTDESC            BITMAP                  "res\\sortasc1.bmp"
+IDB_SPOT                BITMAP                  "res\\Spot.bmp"
+IDB_STOP                BITMAP                  "res\\Stop.bmp"
+IDB_THUMB_VOL           BITMAP                  "res\\Thumb-Volume.bmp"
+IDB_TIMESIGNAL          BITMAP                  "res\\TimeSignal.bmp"
+IDB_TOOL_QUERY          BITMAP                  "res\\TOOL - Query.bmp"
+IDB_TREE_LOCK           BITMAP                  "res\\Tree - Lock.bmp"
+IDB_UNCUE               BITMAP                  "res\\UnCue.bmp"
+IDB_VOICEINSERT         BITMAP                  "res\\Voice Insert.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bmp00001.bmp"
+IDB_CONFIG              BITMAP                  "res\\Config.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SUNDAY              "Domingo"
+    IDS_MONDAY              "Segunda"
+    IDS_TUESDAY             "Terça"
+    IDS_WEDNESDAY           "Quarta"
+    IDS_THURSDAY            "Quinta"
+    IDS_FRIDAY              "Sexta"
+    IDS_SATURDAY            "Sábado"
+    IDS_REFRESH             "Actualizar"
+    IDS_INFO                "Info"
+    IDS_REMOVE              "Remove"
+    IDS_PFL                 "PFL"
+    IDS_MOVEUP              "Adiantar"
+    IDS_MOVEDOWN            "Atrasar"
+    IDS_NEWSOUND            "Novo Som"
+    IDS_NEWCART             "Novo Cartwall"
+    IDS_SAVECART            "Guardar Alterações"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "Titúlo"
+    IDS_DURATION            "Duração"
+    IDS_INTRO               "Intro"
+    IDS_STARTINGTIME        "Inicio"
+    IDS_FULLAUTO            "Automático"
+    IDS_LIVEASSIST          "Live Assist"
+    IDS_MANUAL              "Manual"
+    IDS_MUSIC               "Música"
+    IDS_JINGLES             "Jingles"
+    IDS_TRAFFIC             "Publicidade"
+    IDS_CARTWALL            "Cartwall"
+    IDS_LINEUP              "Alinhamento"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_OLEINITFAILED "A inicialização do OLE falhou. A funcionalidade 'drag & drop' não estará disponível!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOBLOCK             "Sem bloco de publicidade!"
+    IDS_NOPROG              "Sem programa definido!"
+    IDS_NEXTBLOCK           "Próximo Bloco"
+    IDS_NEXTPROG            "Próximo Programa"
+    IDS_LINEUPLENGTH        "Duração Alinhamento"
+    IDS_NOWSHOWING          "Faixa Actual"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRODUCER            "Produção"
+    IDS_MUSIC_DISCOGRAPHY   "Discografia"
+    IDS_MUSIC_PLAYLIST      "Play List"
+    IDS_MUSIC_CATEGORY      "Género"
+    IDS_MUSIC_SEARCH        "Pesquisa Avançada"
+    IDS_PRODUCER_SOUNDRECORDER "Gravador de Voz"
+    IDS_PRODUCER_MUSICEDITING "Edição de Música"
+    IDS_PRODUCER_PROGRAMMING "Programação"
+    IDS_DEADLINE            "Deadline"
+    IDS_TRAFFIC_SPONSORS    "Patrocinios"
+    IDS_TRAFFIC_BLOCKS      "Blocos"
+    IDS_TRAFFIC_BUMPED      "Não Emitida"
+    IDS_VOICEINSERT         "Takes de Locução"
+    IDS_ARTIST              "Interprete:"
+    IDS_SONGTITLE           "Titulo:"
+    IDS_SOUNDFILE           "Ficheiro de Audio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADCART            "Abrir Cartwall"
+    IDS_DISCARD             "Anualar Alterações"
+    IDS_NEWSCHEDULE         "Novo Programa"
+    IDS_SPONSORBLOCKS       "Blocos de Patrocínios"
+    IDS_BACK                "Retroceder"
+    IDS_FOWARD              "Avançar"
+    IDS_STOP                "Parar"
+    IDS_NEWS                "Informação"
+    IDS_ADRESS              "Endereço"
+    IDS_NEWVOICEINSERT      "Novo Take"
+    IDS_EDITSCHEDULE        "Editar Programa"
+    IDS_EDITLINEUP          "Editar Alinhamento"
+    IDS_LOCK                "Bloquear Item"
+    IDS_SCHEDULE            "Programa"
+    IDS_EXIT                "Sair"
+    IDS_HELP                "Manual Online"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY            "Género:"
+    IDS_PLAYLIST            "Play List:"
+    IDS_EXPRESSION          "Expressão:"
+    IDS_LENGTH              "Duração:"
+    IDS_INTROT              "Intro:"
+    IDS_RYTHM               "Ritmo:"
+    IDS_CDTITLE             "CD:"
+    IDS_RECORDINGDATE       "Data:"
+    IDS_RECORDLABEL         "Editora:"
+    IDS_LYRICS              "Letra:"
+    IDS_MUSICCOMPOSER       "Compositor:"
+    IDS_MUSICPRODUCER       "Produtor:"
+    IDS_STUDIO              "Estudio:"
+    IDS_MUSICIANS           "Musicos:"
+    IDS_REMARKS             "Observações:"
+    IDS_JANUARY             "Janeiro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEWCATEGORY         "Esse género não foi encontrado! Deseja criar um novo género?"
+    IDS_NEWEXPRESSION       "Essa expressão não foi encontrada! Deseja criar uma nova expressão?"
+    IDS_NEWRECORD           "Esse CD não foi encontrado! Deseja criar um novo CD?"
+    IDS_NEWLABEL            "Essa editora não foi encontrada! Deseja criar uma nova editora?"
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEBRUARY            "Fevereiro"
+    IDS_MARCH               "Março"
+    IDS_APRIL               "Abril"
+    IDS_MAY                 "Maio"
+    IDS_JUNE                "Junho"
+    IDS_JULY                "Julho"
+    IDS_AUGUST              "Agosto"
+    IDS_SEPTEMBER           "Setembro"
+    IDS_OCTOBER             "Outubro"
+    IDS_NOVEMBER            "Novembro"
+    IDS_DECEMBER            "Dezembro"
+    IDS_DATE                "Data"
+    IDS_AIRED               "Emitidos"
+    IDS_RMS                 "RMs de Informação"
+    IDS_INTERNET            "Internet Browser"
+    IDS_TALENT              "Locutor:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fim"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+    IDS_SONGMANDATORY       "A introdução do género e da expressão da música são obrigatórios!"
+    IDS_STARTEXACT          "Começar exactamente na hora"
+    IDS_ENDEXACT            "Acabar exactamente na hora"
+    IDS_NOTEXACTLY          "Logo que possível"
+    IDS_MENULINEUP          "Alinhar"
+    IDS_MENUDELAY1          "Adiar 1 Minuto"
+    IDS_MENUDELAY2          "Adiar 2 Minutos"
+    IDS_MENUDELAY5          "Adiar 5 Minutos"
+    IDS_INFOCARTWALL        "Existe um cartwall de informação com esse nome!"
+    IDS_CONFIRMNEWCARTWALL  "Tem a certeza que pretende descartar a configuração actual do Cartwall?"
+    IDS_CARTWALLEXISTS      "Já existe um Cartwall com esse nome!\nPretende substitílo?"
+    IDS_MENUSKIPBLOCK       "Anular Bloco"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATH                "Localização:"
+    IDS_FILE                "Ficheiro:"
+    IDS_TIMESIGNAL          "Sinal Horário"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSKIPSCHEDULE    "Anular Programa"
+    IDS_FORMAT_SCHEDULETO   "Programa para %d-%d-%d"
+    IDS_CONFIRMRECORDING    "Qualquer audio previamente gravado será perdido!\nTem a certeza de que pretende continuar?"
+    IDS_HASPERROR           "Não foi encontrada a ficha de protecção do software!\n Esta aplicação será encerrada."
+    IDS_LOGON               "Iniciar Sessão"
+    IDS_CONTENT             "Conteudo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIG              "Configuração"
+    IDS_RESTART             "Reiniciar"
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OnAir_Slave.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

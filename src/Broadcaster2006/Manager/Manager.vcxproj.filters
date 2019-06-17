@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{84a5551e-d6d8-4622-b0c6-d6b3ca05fa27}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6ec35e72-572f-4129-9922-6ab9693b57c8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0de8f302-cf1e-4b6c-b7d2-0c1d8ccb0261}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\DigitalLeftView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErcCreateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErcMainDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Expression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Expressions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Folder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\FolderDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HDFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HDView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Languages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagerDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagerView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NationalitiesMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nationality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAirUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAirUserFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAirUserView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\Permissions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Traffic\RadioStation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\rscomputers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSNationalities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSOnAirUsers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSPath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSRadioStations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Source\rssystemusers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSViewERC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RSViewTimeSignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Manager.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErcCreateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErcMainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Expression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Expressions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Folder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Include\FolderDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HDFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HDView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Languages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagerDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagerView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NationalitiesMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nationality.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnAirUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnAirUserFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnAirUserView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Include\permissions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Include\rscomputers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSNationalities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Include\rssystemusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSViewERC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XM8dist\include\XM8calls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Manager.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Resources\Manager.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Manager.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ManagerDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\save.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Cartwall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Cut.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Edit Spot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Edit.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - Lock.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Block.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Folder.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Jingle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New News LineUp.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Play List.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New RM.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Sound.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TOOL - New Spot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Text.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - New Traffic Schedule.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tool - PFL.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TOOL - Query.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Cartwall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder Jingle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder Music.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder RM.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder Schedule.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder Spot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder Text.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder Unlisted.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Folder User.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tree - folder.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Jingle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Lock.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Music.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - New Template.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - News LineUp.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Recording Task.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - RM.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Schedule.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Sound Recording.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Spot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Template.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - Text.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Tree - User.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Common\Source\Permissions.asp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\XM8dist\lib\XM8DLL.lib" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2059 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\resources\\Traffic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Traffic"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Build 112",IDC_STATIC,40,35,119,8
+    LTEXT           "Copyright High Precision 2006, Lda",IDC_STATIC,40,24,119,8
+    LTEXT           "Digital Broadcaster 2006 - Traffic",IDC_STATIC,40,13,134,8,SS_NOPREFIX
+END
+
+IDR_MAINFRAME DIALOG  0, 0, 330, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: layout dialog bar ",IDC_STATIC,12,4,300,8
+END
+
+IDD_RADIOSTATION DIALOG  0, 0, 326, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose the Radio Station"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,92,50,14
+    LISTBOX         IDC_LIST2,7,7,312,80,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_RECORDINGTASK DIALOG  0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Recording Task"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,381,374,50,14
+    EDITTEXT        IDC_TASKNAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TALENT,110,7,379,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_TASKDEADLINE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,36,100,15
+    EDITTEXT        IDC_TASK,110,62,379,306,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Announcer:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Description:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Deadline:",IDC_STATIC,7,36,93,15,SS_CENTERIMAGE
+    RTEXT           "To Do:",IDC_STATIC,7,62,93,15,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_BLOCKS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select the blocks for this scheduling"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_BLOCKS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,146
+    CONTROL         "List1",IDC_SELECTED,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,156,334,150
+    PUSHBUTTON      "Remove",IDC_BUTTON1,7,313,50,14
+END
+
+IDD_SCHEDULE_CLOCKS_DETAIL DIALOG  0, 0, 381, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose the slot to insert the Spot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,324,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,264,265,50,14
+    EDITTEXT        IDC_NAME,108,7,266,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,23,100,15
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,39,100,15
+    CONTROL         "Sun",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,57,29,10
+    CONTROL         "Mon",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,57,30,10
+    CONTROL         "Tue",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,57,29,10
+    CONTROL         "Wed",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,57,31,10
+    CONTROL         "Thu",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,57,29,10
+    CONTROL         "Fri",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,57,23,10
+    CONTROL         "Sat",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,339,57,27,10
+    CONTROL         "Tree1",IDC_BLOCKTREE,"SysTreeView32",TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,108,74,266,186
+    RTEXT           "Block's Name:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Starting Date:",IDC_STATIC,7,23,93,15,SS_CENTERIMAGE
+    RTEXT           "Ending Date:",IDC_STATIC,7,39,93,15,SS_CENTERIMAGE
+    RTEXT           "Airing Days:",IDC_STATIC,7,57,93,10,SS_CENTERIMAGE
+    RTEXT           "Posição no bloco:",IDC_STATIC,7,74,93,10,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_MAIN DIALOGEX 0, 0, 348, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scheduling"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,63,69,16
+    GROUPBOX        "Start",IDC_STATIC,7,51,334,32
+    RTEXT           "Date:",IDC_STATIC,13,63,44,16,SS_CENTERIMAGE
+    RTEXT           "Hour",IDC_STATIC,145,67,36,8
+    CONTROL         "DateTimePicker3",IDC_STARTINGHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | WS_TABSTOP | 0x8,189,64,69,15
+    GROUPBOX        "End",IDC_STATIC,7,84,334,52
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,95,69,16
+    CONTROL         "DateTimePicker3",IDC_FINALHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,189,95,69,15
+    LTEXT           "Ending Time",IDC_STATIC,146,98,40,8
+    EDITTEXT        IDC_NUMBER,72,116,69,14,ES_AUTOHSCROLL
+    CONTROL         "By Date",IDC_BYDATE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_NOTIFY,13,95,48,16
+    CONTROL         "By Number",IDC_BYNUMBER,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,116,48,14
+    RTEXT           "Radio:",IDC_STATIC,17,15,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_RADIOSTATION,72,15,182,93,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Customer:",IDC_STATIC,17,31,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_CUSTOMER,72,31,264,89,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Value",IDC_STATIC,7,140,334,55
+    GROUPBOX        "",IDC_STATIC,7,7,334,43
+    CONTROL         "By Insertion",IDC_BYINSERT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,152,48,14
+    CONTROL         "By Schedule",IDC_BYCONTRACT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,170,48,14
+    EDITTEXT        IDC_VALUE,189,153,69,14,ES_AUTOHSCROLL
+    RTEXT           "Value",IDC_STATIC,147,153,35,14,SS_CENTERIMAGE
+    RTEXT           "PI:",IDC_STATIC,260,15,18,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PI,279,15,56,14,ES_AUTOHSCROLL
+END
+
+IDD_SCHEDULE_SPOTS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select the Spots to schedule"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SPOTS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,129
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,142,334,168
+    PUSHBUTTON      "Remove",IDC_BUTTON1,7,313,57,14
+    PUSHBUTTON      "Move Up",IDC_BUTTON2,68,313,50,14
+    PUSHBUTTON      "Move Down",IDC_BUTTON3,121,313,50,14
+END
+
+IDD_SCHEDULE_SPOTS_DETAIL DIALOG  0, 0, 377, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spot insertion details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,320,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,82,50,14
+    EDITTEXT        IDC_NAME,111,7,259,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,24,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,42,100,15
+    CONTROL         "Sun",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,63,29,10
+    CONTROL         "Mon",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,63,30,10
+    CONTROL         "Tue",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,63,29,10
+    CONTROL         "Wed",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,63,31,10
+    CONTROL         "Thu",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,63,29,10
+    CONTROL         "Fri",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,299,63,23,10
+    CONTROL         "Sat",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,63,27,10
+    RTEXT           "Spot Name:",IDC_STATIC,7,7,96,14,SS_CENTERIMAGE
+    RTEXT           "Starting Date:",IDC_STATIC,7,24,96,14,SS_CENTERIMAGE
+    RTEXT           "Ending Date:",IDC_STATIC,7,42,96,14,SS_CENTERIMAGE
+    RTEXT           "Airing Days:",IDC_STATIC,7,63,96,10,SS_CENTERIMAGE
+END
+
+IDD_SPONSOR DIALOG  0, 0, 362, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spot's airing period"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,76,50,14
+    RTEXT           "Customer:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CUSTOMER,110,7,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Spot's Name:",IDC_STATIC,7,22,93,14,SS_CENTERIMAGE
+    RTEXT           "Cliente:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPOTNAME,110,22,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Starting Date:",IDC_STATIC,7,38,93,14,SS_CENTERIMAGE
+    RTEXT           "Ending Date:",IDC_STATIC,7,55,93,14,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_STARTINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,38,100,15
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_ENDINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,55,100,15
+END
+
+IDD_SPOT DIALOGEX 0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spot's record"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_CUSTOMER,110,7,379,242,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_BUSINESS,110,36,379,219,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AGENCY,110,50,379,241,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VOICE,110,64,379,216,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PATH,110,96,379,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILENAME,110,110,379,229,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OBS,110,128,379,61,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,383,374,50,14
+    RTEXT           "Customer:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Spot's Name:",IDC_STATIC,7,21,93,12,SS_CENTERIMAGE
+    RTEXT           "Type of business:",IDC_STATIC,7,36,93,12,SS_CENTERIMAGE
+    RTEXT           "Agency:",IDC_STATIC,7,50,93,12,SS_CENTERIMAGE
+    RTEXT           "Main voice:",IDC_STATIC,7,64,93,12,SS_CENTERIMAGE
+    RTEXT           "Remarks:",IDC_STATIC,7,128,93,12,SS_CENTERIMAGE
+    RTEXT           "Path:",IDC_STATIC,7,96,93,12,SS_CENTERIMAGE
+    RTEXT           "File Name:",IDC_STATIC,7,110,93,12,SS_CENTERIMAGE
+    RTEXT           "Standard Length",IDC_STATIC,7,78,93,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_STANDARDLENGTH,110,78,53,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Traffic MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Gestão Comercial"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "Traffic.EXE"
+            VALUE "ProductName", "Traffic Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_RADIOSTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_RECORDINGTASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+
+    IDD_SCHEDULE_BLOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_CLOCKS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        VERTGUIDE, 100
+        VERTGUIDE, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SCHEDULE_MAIN, DIALOG
+    BEGIN
+        VERTGUIDE, 13
+        VERTGUIDE, 61
+    END
+
+    IDD_SCHEDULE_SPOTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_SPOTS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        VERTGUIDE, 103
+        VERTGUIDE, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SPONSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SPOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        VERTGUIDE, 439
+        VERTGUIDE, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Traffic"
+    BEGIN
+        MENUITEM "Traffic Management",          ID_TRAFFIC
+        MENUITEM "On-Air Commercials",          ID_ONAIR_TRAFFIC
+        MENUITEM SEPARATOR
+        MENUITEM "Recording Tasks",             ID_RECORDINGTASK
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Status Bar",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Tile Windows Vertically",     ID_VIEW_VERTICAL
+        MENUITEM "Tile Windows Horizontally",   ID_VIEW_HORIZONTAL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Hekp",                        ID_HELP_HELP
+        MENUITEM "&About Traffic...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_TRAFFIC              "Traffic Management"
+    ID_VIEW_AGENCY          "Order by Agency"
+    ID_VIEW_SALESMAN        "Order by Salesperson"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Shows or hides the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Digital Broadcaster 2006"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOL_NEWSPOT        "New Spot"
+    IDS_TOOL_EDIT           "Edit"
+    IDS_TOOL_CUT            "Remove"
+    IDS_TOOL_NEWTRAFFICSCHEDULE "New Schedule"
+    IDS_TOOL_QUERYBLOCKS    "Search Blocks"
+    IDS_TOOL_NEWSOUND       "New Recording"
+    IDS_TOOL_PFL            "PFL"
+    IDS_TOOL_NEWRM          "1"
+    IDS_TOOL_NEWTEXT        "1"
+    IDS_TOOL_NEWLINEUP      "1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAFFICSCHEDULE     "* Traffic Schedules"
+    IDS_CUSTOMERSPOTS       "Customer's Spots"
+    IDS_SPOTSTOSCHEDULE     "Spots to schedule"
+    IDS_AIRINGPERIOD        "Airing period"
+    IDS_AIRINGDAYS          "Days to air"
+    IDS_SUN                 "Sun"
+    IDS_MON                 "Mon"
+    IDS_TUE                 "Tue"
+    IDS_WED                 "Wed"
+    IDS_THU                 "Thu"
+    IDS_FRI                 "Fri"
+    IDS_SAT                 "Sat"
+    IDS_BLOCKS              "Commercial Blocks"
+    IDS_SELECTEDBLOCKS      "Selected Blocks"
+    IDS_POSITION            "Position"
+    IDS_SPOTSNUMBER         "Nº of Spots"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_FROMTO       "from %d-%d-%d to %d-%d-%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SPOTSLENGTH         "Length"
+    IDS_BLOCK               "Commercial Blocks"
+    IDS_EMPTYSLOT           "Free Slot"
+    IDS_REFRESH             "* Refresh"
+    IDS_SPONSORS            "Sponsors"
+    IDS_RECORDINGS          "Recording Tasks"
+    IDS_VOICEINSERT         "Voice Insert"
+    IDS_TIMESIGNAL          "Time Signal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSTART           "Start"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "End"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIRMSCHEDULEREMOVE 
+                            "Are you sure you want to delete this traffic schedule?"
+    IDS_CONFIRMSPONSORREMOVE 
+                            "Are you sure you want to delete this sponsor?\nIf you choose to do so, the spot will no longer be available on-air, but it will be kept in the traffic management."
+    IDS_CANTDELETECUSTOMER  "You can only delete a customer, after all his spots have been removed!"
+    IDS_CONFIRMCUSTOMERREMOVE 
+                            "Are you sure you want to delete this customer record?"
+    IDS_CONFIRMSPOTREMOVE   "Are you sure you want to delete this spot?\nIf you choose to do so, the spot's record will be deleted, but the audio file will still be available."
+    IDS_NEWCUSTOMER         "Unknown customer!\nDo you wish to create a new customer?"
+    IDS_NEWBUSINESS         "Unknown type of business!\nDo you wish to create a new type of business?"
+    IDS_NEWAGENCY           "Unknown agency!\nDo you wish to create a new agency?"
+    IDS_NEWVOICE            "Unknown voice!\nDo you wish to create a new voice?"
+    IDS_NEWSALESMAN         "Unknown salesperson!\nDo you wish to create a new salesperson?"
+    IDS_SPONSORALLREADYEXISTS "This Spot is already available On-Air!"
+    IDS_CONFIRMREMOVERECORDINGTASK 
+                            "Are you sure you want to delete this recording task?"
+    IDS_CONFIRMRECORDING    "1"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Traffic Management"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPOT DIALOGEX 0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ficha de Spot"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_CUSTOMER,110,7,379,242,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_BUSINESS,110,36,379,219,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AGENCY,110,50,379,241,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VOICE,110,64,379,216,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PATH,110,96,379,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILENAME,110,110,379,229,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OBS,110,128,379,61,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,383,374,50,14
+    RTEXT           "Cliente:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Nome do Spot:",IDC_STATIC,7,21,93,12,SS_CENTERIMAGE
+    RTEXT           "Tipo de produto:",IDC_STATIC,7,36,93,12,SS_CENTERIMAGE
+    RTEXT           "Agencia:",IDC_STATIC,7,50,93,12,SS_CENTERIMAGE
+    RTEXT           "Voz principal:",IDC_STATIC,7,64,93,12,SS_CENTERIMAGE
+    RTEXT           "Observações:",IDC_STATIC,7,128,93,12,SS_CENTERIMAGE
+    RTEXT           "Localização",IDC_STATIC,7,96,93,12,SS_CENTERIMAGE
+    RTEXT           "Ficheiro Audio:",IDC_STATIC,7,110,93,12,SS_CENTERIMAGE
+    RTEXT           "Duração Padrão:",IDC_STATIC,7,78,93,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_STANDARDLENGTH,110,78,53,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_SPONSOR DIALOG  0, 0, 362, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definição do prao de patrocínio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,76,50,14
+    RTEXT           "Cliente:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CUSTOMER,110,7,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Nome dp Spot:",IDC_STATIC,7,22,93,14,SS_CENTERIMAGE
+    RTEXT           "Cliente:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPOTNAME,110,22,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Data de inicio:",IDC_STATIC,7,38,93,14,SS_CENTERIMAGE
+    RTEXT           "Data final:",IDC_STATIC,7,55,93,14,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_STARTINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,38,100,15
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_ENDINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,55,100,15
+END
+
+IDD_SCHEDULE_SPOTS_DETAIL DIALOG  0, 0, 377, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametros para emissão do spot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,320,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,82,50,14
+    EDITTEXT        IDC_NAME,111,7,259,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,24,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,42,100,15
+    CONTROL         "Dom",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,63,31,10
+    CONTROL         "Seg",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,63,29,10
+    CONTROL         "Ter",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,63,27,10
+    CONTROL         "Qua",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,63,29,10
+    CONTROL         "Qui",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,63,27,10
+    CONTROL         "Sex",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,299,63,28,10
+    CONTROL         "Sab",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,63,29,10
+    RTEXT           "Nome do Spot:",IDC_STATIC,7,7,96,14,SS_CENTERIMAGE
+    RTEXT           "Incio de emissão:",IDC_STATIC,7,24,96,14,SS_CENTERIMAGE
+    RTEXT           "Fim de emissão:",IDC_STATIC,7,42,96,14,SS_CENTERIMAGE
+    RTEXT           "Dias de emissão:",IDC_STATIC,7,63,96,10,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_SPOTS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecção de spots a calendarizar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SPOTS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,129
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,142,334,168
+    PUSHBUTTON      "Remover",IDC_BUTTON1,7,313,57,14
+    PUSHBUTTON      "Adiantar",IDC_BUTTON2,68,313,50,14
+    PUSHBUTTON      "Atrasar",IDC_BUTTON3,121,313,50,14
+END
+
+IDD_SCHEDULE_MAIN DIALOGEX 0, 0, 348, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calendarização"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,63,69,16
+    GROUPBOX        "Inicio",IDC_STATIC,7,51,334,32
+    RTEXT           "Data",IDC_STATIC,13,63,44,16,SS_CENTERIMAGE
+    RTEXT           "Hour",IDC_STATIC,145,67,36,8
+    CONTROL         "DateTimePicker3",IDC_STARTINGHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | WS_TABSTOP | 0x8,189,64,69,15
+    GROUPBOX        "Fim",IDC_STATIC,7,84,334,52
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,95,69,16
+    CONTROL         "DateTimePicker3",IDC_FINALHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,189,95,69,15
+    LTEXT           "Hora Final",IDC_STATIC,151,99,33,8
+    EDITTEXT        IDC_NUMBER,72,116,69,14,ES_AUTOHSCROLL
+    CONTROL         "Por Data",IDC_BYDATE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_NOTIFY,13,95,48,16
+    CONTROL         "Por Número",IDC_BYNUMBER,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,116,48,14
+    RTEXT           "Rádio:",IDC_STATIC,17,15,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_RADIOSTATION,72,15,185,93,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Cliente:",IDC_STATIC,17,31,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_CUSTOMER,72,31,264,89,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valor",IDC_STATIC,7,140,334,55
+    GROUPBOX        "",IDC_STATIC,7,7,334,43
+    CONTROL         "Por Inserção",IDC_BYINSERT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,152,48,14
+    CONTROL         "Por Contrato",IDC_BYCONTRACT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,170,48,14
+    EDITTEXT        IDC_VALUE,189,153,69,14,ES_AUTOHSCROLL
+    RTEXT           "Valor",IDC_STATIC,147,153,35,14,SS_CENTERIMAGE
+    RTEXT           "PI:",IDC_STATIC,260,15,18,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PI,279,15,56,14,ES_AUTOHSCROLL
+END
+
+IDD_SCHEDULE_CLOCKS_DETAIL DIALOG  0, 0, 381, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definição da entrada de publicidade no bloco"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,324,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,264,265,50,14
+    EDITTEXT        IDC_NAME,108,7,266,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,23,100,15
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,39,100,15
+    CONTROL         "Dom",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,57,31,10
+    CONTROL         "Seg",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,57,29,10
+    CONTROL         "Ter",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,57,27,10
+    CONTROL         "Qua",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,57,29,10
+    CONTROL         "Qui",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,57,27,10
+    CONTROL         "Sex",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,57,28,10
+    CONTROL         "Sab",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,339,57,29,10
+    CONTROL         "Tree1",IDC_BLOCKTREE,"SysTreeView32",TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,108,74,266,186
+    RTEXT           "Nome do Bloco:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Data de entrada no Bloco:",IDC_STATIC,7,23,93,15,SS_CENTERIMAGE
+    RTEXT           "Data de saída do bloco:",IDC_STATIC,7,39,93,15,SS_CENTERIMAGE
+    RTEXT           "Dias p/ Emissão no bloco:",IDC_STATIC,7,57,93,10,SS_CENTERIMAGE
+    RTEXT           "Posição no bloco:",IDC_STATIC,7,74,93,10,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_BLOCKS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecção dos blocos onde calendarizar a publicidade"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_BLOCKS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,146
+    CONTROL         "List1",IDC_SELECTED,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,156,334,150
+    PUSHBUTTON      "Remover",IDC_BUTTON1,7,313,50,14
+END
+
+IDD_RECORDINGTASK DIALOG  0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ordem de gravação"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,381,374,50,14
+    EDITTEXT        IDC_TASKNAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TALENT,110,7,379,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_TASKDEADLINE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,36,100,15
+    EDITTEXT        IDC_TASK,110,62,379,306,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Locutor:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Descrição:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Data limite:",IDC_STATIC,7,36,93,15,SS_CENTERIMAGE
+    RTEXT           "Instruções:",IDC_STATIC,7,62,93,15,SS_CENTERIMAGE
+END
+
+IDD_RADIOSTATION DIALOG  0, 0, 326, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecione a Estação de Rádio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,92,50,14
+    LISTBOX         IDC_LIST2,7,7,312,80,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CUSTOMER DIALOGEX 0, 0, 346, 394
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ficha de Cliente"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,289,373,50,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,234,373,50,14,0,WS_EX_STATICEDGE
+    RTEXT           "Nome:",IDC_STATIC,7,22,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Endereço:",IDC_STATIC,7,57,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "CEP:",IDC_STATIC,7,95,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Telefone:",IDC_STATIC,7,111,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Fax:",IDC_STATIC,7,127,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_NAME,95,22,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_ADRESS,95,57,244,37,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_CUSTOMER_ZIP,95,95,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_PHONE,95,111,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_FAX,95,127,244,14,ES_AUTOHSCROLL
+    RTEXT           "e-mail:",IDC_STATIC,7,157,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "www:",IDC_STATIC,7,173,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Contato:",IDC_STATIC,7,189,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_EMAIL,95,157,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_WWW,95,173,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_CONTACT,95,189,244,14,ES_AUTOHSCROLL
+    RTEXT           "CNPJ:",IDC_STATIC,7,208,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_FN,95,208,244,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CUSTOMER_BUSINESS,95,240,244,126,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CUSTOMER_AGENCY,95,256,244,110,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CUSTOMER_SALES,95,272,244,103,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Actividade Comercial:",IDC_STATIC,7,240,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Agência:",IDC_STATIC,7,256,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Vendedor:",IDC_STATIC,7,272,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Observações:",IDC_STATIC,7,290,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_OBS,95,290,244,77,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "Razão Social:",IDC_STATIC,7,38,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_NAME2,95,38,244,14,ES_AUTOHSCROLL
+    RTEXT           "Número de Cliente:",IDC_STATIC,7,7,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_NUMBER,95,7,244,14,ES_AUTOHSCROLL
+    RTEXT           "Celular:",IDC_STATIC,7,142,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_CELPHONE,95,142,244,14,ES_AUTOHSCROLL
+    RTEXT           "Inscrição Estadual:",IDC_STATIC,7,224,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_FN2,95,224,244,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SPOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        VERTGUIDE, 439
+        VERTGUIDE, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+
+    IDD_SPONSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SCHEDULE_SPOTS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        VERTGUIDE, 103
+        VERTGUIDE, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SCHEDULE_SPOTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_MAIN, DIALOG
+    BEGIN
+        VERTGUIDE, 13
+        VERTGUIDE, 61
+    END
+
+    IDD_SCHEDULE_CLOCKS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        VERTGUIDE, 100
+        VERTGUIDE, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SCHEDULE_BLOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_RECORDINGTASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+
+    IDD_RADIOSTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_CUSTOMER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        VERTGUIDE, 85
+        VERTGUIDE, 95
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 387
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Publicidade"
+    BEGIN
+        MENUITEM "Gestão de &Publicidade",      ID_TRAFFIC
+        MENUITEM "Publicidade em &Emissão",     ID_ONAIR_TRAFFIC
+        MENUITEM SEPARATOR
+        MENUITEM "Ordem de Gravação",           ID_RECORDINGTASK
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Barra de Estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Dispor na Vertical",          ID_VIEW_VERTICAL
+        MENUITEM "Dispor na Horizontal",        ID_VIEW_HORIZONTAL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Ajuda",                       ID_HELP_HELP
+        MENUITEM "&About Traffic...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_TRAFFIC              "Gestão de publicidade"
+    ID_VIEW_AGENCY          "Dispor publicidade por agencia"
+    ID_VIEW_SALESMAN        "Dispor publicidade segundo o Angariador"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Mostrar a barra de estado"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Digital Broadcaster 2006"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOL_NEWSPOT        "Novo Spot"
+    IDS_TOOL_EDIT           "Editar"
+    IDS_TOOL_CUT            "Eliminar"
+    IDS_TOOL_NEWTRAFFICSCHEDULE "Nova Calendarização"
+    IDS_TOOL_QUERYBLOCKS    "Pesquisa Blocos"
+    IDS_TOOL_NEWSOUND       "Nova Gravação"
+    IDS_TOOL_PFL            "Monição"
+    IDS_TOOL_NEWRM          "Novo RM"
+    IDS_TOOL_NEWTEXT        "Novo Texto"
+    IDS_TOOL_NEWLINEUP      "Novo Alinhamento"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAFFICSCHEDULE     "* Calendarizações"
+    IDS_CUSTOMERSPOTS       "Spots do Cliente"
+    IDS_SPOTSTOSCHEDULE     "Spots a agendar"
+    IDS_AIRINGPERIOD        "Periodo de emissão"
+    IDS_AIRINGDAYS          "Dias a emitir"
+    IDS_SUN                 "Dom"
+    IDS_MON                 "Seg"
+    IDS_TUE                 "Ter"
+    IDS_WED                 "Qua"
+    IDS_THU                 "Qui"
+    IDS_FRI                 "Sex"
+    IDS_SAT                 "Sab"
+    IDS_BLOCKS              "Blocos de publicidade"
+    IDS_SELECTEDBLOCKS      "Blocos Seleccionados"
+    IDS_POSITION            "Posição"
+    IDS_SPOTSNUMBER         "Nº Spots"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_FROMTO       "de %d-%d-%d a %d-%d-%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SPOTSLENGTH         "Duração"
+    IDS_BLOCK               "Bloco de publicidade"
+    IDS_EMPTYSLOT           "Posição livre"
+    IDS_REFRESH             "* Actualizar"
+    IDS_SPONSORS            "Patrocinios"
+    IDS_RECORDINGS          "Ordens de gravação"
+    IDS_VOICEINSERT         "Take de locução"
+    IDS_TIMESIGNAL          "Sinal Horário"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fim"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIRMSCHEDULEREMOVE 
+                            "Tem a certeza que quer apagar esta calendarização."
+    IDS_CONFIRMSPONSORREMOVE 
+                            "Tewm a certeza que pretende eliminar este patrocínio?\nEm caso afirmativo, o spot deixará de estar disponivel na emissão, mas continuará disponível na gestão de publicidade."
+    IDS_CANTDELETECUSTOMER  "Só poderá apagar um cliente, depois de apagar todos os seus spots!"
+    IDS_CONFIRMCUSTOMERREMOVE 
+                            "Tem a certeza que pretende apagar a ficha de cliente?"
+    IDS_CONFIRMSPOTREMOVE   "Tem a certeza que deseja apagar este spot?\nEm caso afirmativo, o spot será eliminado da base de dados e o respectivo áudio será marcado para posterior remoção."
+    IDS_NEWCUSTOMER         "Cliente inexistente!\nDeseja criar um novo cliente?"
+    IDS_NEWBUSINESS         "Actividade inexistente!\nDeseja criar uma nova actividade?"
+    IDS_NEWAGENCY           "Agencia inexistente!\nPretende criar uma nova agência?"
+    IDS_NEWVOICE            "Voz inexistente!\nPretende criar uma nova voz?"
+    IDS_NEWSALESMAN         "Vendedor inexistente!\nPretende criar um novo vendedor?"
+    IDS_SPONSORALLREADYEXISTS "O Spot já costa da lista de patrocinios!"
+    IDS_CONFIRMREMOVERECORDINGTASK 
+                            "Tem a certeza que pretende apagar a ordem de gravação?"
+    IDS_CONFIRMRECORDING    "Nada"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Gestão Comercial"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOL_NEWSPOT        BITMAP                  "res\\TOOL - New Spot.bmp"
+IDB_TOOL_EDIT_SPOT      BITMAP                  "res\\Tool - Edit Spot.bmp"
+IDB_TOOL_CUT            BITMAP                  "res\\Tool - Cut.bmp"
+IDB_TOOL_EDIT           BITMAP                  "res\\Tool - Edit.bmp"
+IDB_TREE_SPOT           BITMAP                  "res\\Tree - Spot.bmp"
+IDB_TREE_FOLDER_SPOT    BITMAP                  "res\\Tree - Folder Spot.bmp"
+IDB_TOOL_NEWTRAFFICSCHEDULE BITMAP                  "res\\Tool - New Traffic Schedule.bmp"
+IDB_TREE_FOLDER_SCHEDULE BITMAP                  "res\\Tree - Folder Schedule.bmp"
+IDB_TREE_SCHEDULE       BITMAP                  "res\\Tree - Schedule.bmp"
+IDB_TOOL_QUERYBLOCKS    BITMAP                  "res\\TOOL - Query.bmp"
+IDB_TREE_JINGLE         BITMAP                  "res\\Tree - Jingle.bmp"
+IDB_PLAY                BITMAP                  "res\\Play.bmp"
+IDB_REC                 BITMAP                  "res\\Rec.bmp"
+IDB_STOP                BITMAP                  "res\\Stop.bmp"
+IDB_RECOFF              BITMAP                  "res\\Rec Off.bmp"
+IDB_TOOL_PFL            BITMAP                  "res\\Tool - PFL.bmp"
+IDB_TOOL_NEWSOUND       BITMAP                  "res\\Tool - New Sound.bmp"
+IDB_TREE_USER           BITMAP                  "res\\Tree - User.bmp"
+IDB_PAUSE_BIG           BITMAP                  "res\\Pause - Big.bmp"
+IDB_TREE_RECORDINGTASK  BITMAP                  "res\\Tree - Recording Task.bmp"
+IDB_TREE_SOUNDRECORDING BITMAP                  "res\\Tree - Sound Recording.bmp"
+IDB_TOOL_NEWRM          BITMAP                  "res\\Tool - New RM.bmp"
+IDB_TREE_RM             BITMAP                  "res\\Tree - RM.bmp"
+IDB_TREE_FOLDER_RM      BITMAP                  "res\\Tree - Folder RM.bmp"
+IDB_CONTAINER_MUSIC     BITMAP                  "res\\Container - Music.bmp"
+IDB_CONTAINER_JINGLES   BITMAP                  "res\\Container - jingles.bmp"
+IDB_TREE_TEXT           BITMAP                  "res\\Tree - Text.bmp"
+IDB_TREE_FOLDER_TEXT    BITMAP                  "res\\Tree - Folder Text.bmp"
+IDB_TOOL_NEWTEXT        BITMAP                  "res\\Tool - New Text.bmp"
+IDB_TOOL_NEWCARTWALL    BITMAP                  "res\\Tool - Cartwall.bmp"
+IDB_TREE_CARTWALL       BITMAP                  "res\\Tree - Cartwall.bmp"
+IDB_CONTAINER_TRAFFIC   BITMAP                  "res\\Container - Comercial.bmp"
+IDB_CONTAINER_VOICEINSERT BITMAP                  "res\\Container - Voice Insert.bmp"
+IDB_CONTAINER_RMS       BITMAP                  "res\\Container - RMS.bmp"
+IDB_TOOL_INFO           BITMAP                  "res\\Info.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOMER DIALOGEX 0, 0, 346, 394
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ficha de Cliente"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,289,373,50,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,234,373,50,14,0,WS_EX_STATICEDGE
+    RTEXT           "Nome:",IDC_STATIC,7,22,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Morada",IDC_STATIC,7,57,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Código Postal:",IDC_STATIC,7,95,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Telefone:",IDC_STATIC,7,111,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Fax:",IDC_STATIC,7,127,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_NAME,95,22,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_ADRESS,95,57,244,37,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_CUSTOMER_ZIP,95,95,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_PHONE,95,111,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_FAX,95,127,244,14,ES_AUTOHSCROLL
+    RTEXT           "e-mail:",IDC_STATIC,7,157,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "www:",IDC_STATIC,7,173,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Contacto:",IDC_STATIC,7,189,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_EMAIL,95,157,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_WWW,95,173,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUSTOMER_CONTACT,95,189,244,14,ES_AUTOHSCROLL
+    RTEXT           "Nº de Contribuinte:",IDC_STATIC,7,208,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_FN,95,208,244,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CUSTOMER_BUSINESS,95,240,244,126,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CUSTOMER_AGENCY,95,256,244,110,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CUSTOMER_SALES,95,272,244,103,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Actividade Comercial:",IDC_STATIC,7,240,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Agencia:",IDC_STATIC,7,256,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Vendedor:",IDC_STATIC,7,272,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    RTEXT           "Observações:",IDC_STATIC,7,290,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_OBS,95,290,244,77,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "Razão Social",IDC_STATIC,7,38,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_NAME2,95,38,244,14,ES_AUTOHSCROLL
+    RTEXT           "Número de Cliente:",IDC_STATIC,7,7,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_NUMBER,95,7,244,14,ES_AUTOHSCROLL
+    RTEXT           "Telemovel:",IDC_STATIC,7,142,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_CELPHONE,95,142,244,14,ES_AUTOHSCROLL
+    RTEXT           "Inscrição CRC:",IDC_STATIC,7,224,78,14,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_CUSTOMER_FN2,95,224,244,14,ES_AUTOHSCROLL
+END
+
+IDD_SCHEDULE_MAIN DIALOGEX 0, 0, 348, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calendarização"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,63,69,16
+    GROUPBOX        "Inicio",IDC_STATIC,7,51,334,32
+    RTEXT           "Data",IDC_STATIC,13,63,44,16,SS_CENTERIMAGE
+    RTEXT           "Hour",IDC_STATIC,145,67,36,8
+    CONTROL         "DateTimePicker3",IDC_STARTINGHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | WS_TABSTOP | 0x8,189,64,69,15
+    GROUPBOX        "Fim",IDC_STATIC,7,84,334,52
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,95,69,16
+    CONTROL         "DateTimePicker3",IDC_FINALHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,189,95,69,15
+    LTEXT           "Hora Final",IDC_STATIC,151,99,33,8
+    EDITTEXT        IDC_NUMBER,72,116,69,14,ES_AUTOHSCROLL
+    CONTROL         "Por Data",IDC_BYDATE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_NOTIFY,13,95,48,16
+    CONTROL         "Por Número",IDC_BYNUMBER,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,116,48,14
+    RTEXT           "Rádio:",IDC_STATIC,17,15,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_RADIOSTATION,72,15,182,93,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Cliente:",IDC_STATIC,17,31,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_CUSTOMER,72,31,264,89,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valor",IDC_STATIC,7,140,334,55
+    GROUPBOX        "",IDC_STATIC,7,7,334,43
+    CONTROL         "Por Inserção",IDC_BYINSERT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,152,48,14
+    CONTROL         "Por Contrato",IDC_BYCONTRACT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,170,48,14
+    EDITTEXT        IDC_VALUE,189,153,69,14,ES_AUTOHSCROLL
+    RTEXT           "Valor",IDC_STATIC,147,153,35,14,SS_CENTERIMAGE
+    RTEXT           "PI:",IDC_STATIC,260,15,18,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PI,279,15,56,14,ES_AUTOHSCROLL
+END
+
+IDD_SCHEDULE_SPOTS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecção de spots a calendarizar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SPOTS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,129
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,142,334,168
+    PUSHBUTTON      "Remover",IDC_BUTTON1,7,313,57,14
+    PUSHBUTTON      "Adiantar",IDC_BUTTON2,68,313,50,14
+    PUSHBUTTON      "Atrasar",IDC_BUTTON3,121,313,50,14
+END
+
+IDD_SCHEDULE_SPOTS_DETAIL DIALOG  0, 0, 377, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametros para emissão do spot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,320,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,82,50,14
+    EDITTEXT        IDC_NAME,111,7,259,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,24,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,42,100,15
+    CONTROL         "Dom",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,63,31,10
+    CONTROL         "Seg",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,63,29,10
+    CONTROL         "Ter",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,63,27,10
+    CONTROL         "Qua",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,63,29,10
+    CONTROL         "Qui",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,63,27,10
+    CONTROL         "Sex",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,299,63,28,10
+    CONTROL         "Sab",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,63,29,10
+    RTEXT           "Nome do Spot:",IDC_STATIC,7,7,96,14,SS_CENTERIMAGE
+    RTEXT           "Incio de emissão:",IDC_STATIC,7,24,96,14,SS_CENTERIMAGE
+    RTEXT           "Fim de emissão:",IDC_STATIC,7,42,96,14,SS_CENTERIMAGE
+    RTEXT           "Dias de emissão:",IDC_STATIC,7,63,96,10,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_BLOCKS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecção dos blocos onde calendarizar a publicidade"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_BLOCKS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,146
+    CONTROL         "List1",IDC_SELECTED,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,156,334,150
+    PUSHBUTTON      "Remover",IDC_BUTTON1,7,313,50,14
+END
+
+IDD_SCHEDULE_CLOCKS_DETAIL DIALOG  0, 0, 381, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definição da entrada de publicidade no bloco"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,324,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,264,265,50,14
+    EDITTEXT        IDC_NAME,108,7,266,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,23,100,15
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,39,100,15
+    CONTROL         "Dom",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,57,31,10
+    CONTROL         "Seg",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,57,29,10
+    CONTROL         "Ter",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,57,27,10
+    CONTROL         "Qua",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,57,29,10
+    CONTROL         "Qui",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,57,27,10
+    CONTROL         "Sex",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,57,28,10
+    CONTROL         "Sab",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,339,57,29,10
+    CONTROL         "Tree1",IDC_BLOCKTREE,"SysTreeView32",TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,108,74,266,186
+    RTEXT           "Nome do Bloco:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Data de entrada no Bloco:",IDC_STATIC,7,23,93,15,SS_CENTERIMAGE
+    RTEXT           "Data de saída do bloco:",IDC_STATIC,7,39,93,15,SS_CENTERIMAGE
+    RTEXT           "Dias p/ Emissão no bloco:",IDC_STATIC,7,57,93,10,SS_CENTERIMAGE
+    RTEXT           "Posição no bloco:",IDC_STATIC,7,74,93,10,SS_CENTERIMAGE
+END
+
+IDD_SPOT DIALOGEX 0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ficha de Spot"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_CUSTOMER,110,7,379,242,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_BUSINESS,110,36,379,219,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AGENCY,110,50,379,241,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VOICE,110,64,379,216,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PATH,110,97,379,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILENAME,110,111,379,229,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OBS,110,130,379,59,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,383,374,50,14
+    RTEXT           "Cliente:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Nome do Spot:",IDC_STATIC,7,21,93,12,SS_CENTERIMAGE
+    RTEXT           "Tipo de produto:",IDC_STATIC,7,36,93,12,SS_CENTERIMAGE
+    RTEXT           "Agencia:",IDC_STATIC,7,50,93,12,SS_CENTERIMAGE
+    RTEXT           "Voz principal:",IDC_STATIC,7,64,93,12,SS_CENTERIMAGE
+    RTEXT           "Observações:",IDC_STATIC,7,130,93,12,SS_CENTERIMAGE
+    RTEXT           "Localização",IDC_STATIC,7,97,93,12,SS_CENTERIMAGE
+    RTEXT           "Ficheiro Audio:",IDC_STATIC,7,111,93,12,SS_CENTERIMAGE
+    RTEXT           "Duração Padrão:",IDC_STATIC,7,78,93,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_STANDARDLENGTH,110,78,53,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_RADIOSTATION DIALOG  0, 0, 326, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecione a Estação de Rádio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,92,50,14
+    LISTBOX         IDC_LIST2,7,7,312,80,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPONSOR DIALOG  0, 0, 362, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definição do prao de patrocínio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,76,50,14
+    RTEXT           "Cliente:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CUSTOMER,110,7,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Nome dp Spot:",IDC_STATIC,7,22,93,14,SS_CENTERIMAGE
+    RTEXT           "Cliente:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPOTNAME,110,22,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Data de inicio:",IDC_STATIC,7,38,93,14,SS_CENTERIMAGE
+    RTEXT           "Data final:",IDC_STATIC,7,55,93,14,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_STARTINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,38,100,15
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_ENDINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,55,100,15
+END
+
+IDD_RECORDINGTASK DIALOG  0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ordem de gravação"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,381,374,50,14
+    EDITTEXT        IDC_TASKNAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TALENT,110,7,379,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_TASKDEADLINE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,36,100,15
+    EDITTEXT        IDC_TASK,110,62,379,306,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Locutor:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Descrição:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Data limite:",IDC_STATIC,7,36,93,15,SS_CENTERIMAGE
+    RTEXT           "Instruções:",IDC_STATIC,7,62,93,15,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CUSTOMER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        VERTGUIDE, 85
+        VERTGUIDE, 95
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 387
+    END
+
+    IDD_SCHEDULE_MAIN, DIALOG
+    BEGIN
+        VERTGUIDE, 13
+        VERTGUIDE, 61
+    END
+
+    IDD_SCHEDULE_SPOTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_SPOTS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        VERTGUIDE, 103
+        VERTGUIDE, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SCHEDULE_BLOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_CLOCKS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        VERTGUIDE, 100
+        VERTGUIDE, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SPOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        VERTGUIDE, 439
+        VERTGUIDE, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+
+    IDD_RADIOSTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SPONSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_RECORDINGTASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Publicidade"
+    BEGIN
+        MENUITEM "Gestão de &Publicidade",      ID_TRAFFIC
+        MENUITEM "Publicidade em &Emissão",     ID_ONAIR_TRAFFIC
+        MENUITEM SEPARATOR
+        MENUITEM "Ordem de Gravação",           ID_RECORDINGTASK
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Barra de Estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Dispor na Vertical",          ID_VIEW_VERTICAL
+        MENUITEM "Dispor na Horizontal",        ID_VIEW_HORIZONTAL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Ajuda",                       ID_HELP_HELP
+        MENUITEM "&About Traffic...",           ID_APP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Traffic.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_TRAFFIC              "Gestão de publicidade"
+    ID_VIEW_AGENCY          "Dispor publicidade por agencia"
+    ID_VIEW_SALESMAN        "Dispor publicidade segundo o Angariador"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Mostrar a barra de estado"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Digital Broadcaster 2006"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOL_NEWSPOT        "Novo Spot"
+    IDS_TOOL_EDIT           "Editar"
+    IDS_TOOL_CUT            "Eliminar"
+    IDS_TOOL_NEWTRAFFICSCHEDULE "Nova Calendarização"
+    IDS_TOOL_QUERYBLOCKS    "Pesquisa Blocos"
+    IDS_TOOL_NEWSOUND       "Nova Gravação"
+    IDS_TOOL_PFL            "Monição"
+    IDS_TOOL_NEWRM          "Novo RM"
+    IDS_TOOL_NEWTEXT        "Novo Texto"
+    IDS_TOOL_NEWLINEUP      "Novo Alinhamento"
+    IDS_TOOL_TRAFFICLIST    "Listagem Geral"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAFFICSCHEDULE     "* Calendarizações"
+    IDS_CUSTOMERSPOTS       "Spots do Cliente"
+    IDS_SPOTSTOSCHEDULE     "Spots a agendar"
+    IDS_AIRINGPERIOD        "Periodo de emissão"
+    IDS_AIRINGDAYS          "Dias a emitir"
+    IDS_SUN                 "Dom"
+    IDS_MON                 "Seg"
+    IDS_TUE                 "Ter"
+    IDS_WED                 "Qua"
+    IDS_THU                 "Qui"
+    IDS_FRI                 "Sex"
+    IDS_SAT                 "Sab"
+    IDS_BLOCKS              "Blocos de publicidade"
+    IDS_SELECTEDBLOCKS      "Blocos Seleccionados"
+    IDS_POSITION            "Posição"
+    IDS_SPOTSNUMBER         "Nº Spots"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_FROMTO       "de %d-%d-%d a %d-%d-%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SPOTSLENGTH         "Duração"
+    IDS_BLOCK               "Bloco de publicidade"
+    IDS_EMPTYSLOT           "Posição livre"
+    IDS_REFRESH             "* Actualizar"
+    IDS_SPONSORS            "Patrocinios"
+    IDS_RECORDINGS          "Ordens de gravação"
+    IDS_VOICEINSERT         "Take de locução"
+    IDS_TIMESIGNAL          "Sinal Horário"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fim"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIRMSCHEDULEREMOVE 
+                            "Tem a certeza que quer apagar esta calendarização."
+    IDS_CONFIRMSPONSORREMOVE 
+                            "Tewm a certeza que pretende eliminar este patrocínio?\nEm caso afirmativo, o spot deixará de estar disponivel na emissão, mas continuará disponível na gestão de publicidade."
+    IDS_CANTDELETECUSTOMER  "Só poderá apagar um cliente, depois de apagar todos os seus spots!"
+    IDS_CONFIRMCUSTOMERREMOVE 
+                            "Tem a certeza que pretende apagar a ficha de cliente?"
+    IDS_CONFIRMSPOTREMOVE   "Tem a certeza que deseja apagar este spot?\nEm caso afirmativo, o spot será eliminado da base de dados e o respectivo áudio será marcado para posterior remoção."
+    IDS_NEWCUSTOMER         "Cliente inexistente!\nDeseja criar um novo cliente?"
+    IDS_NEWBUSINESS         "Actividade inexistente!\nDeseja criar uma nova actividade?"
+    IDS_NEWAGENCY           "Agencia inexistente!\nPretende criar uma nova agência?"
+    IDS_NEWVOICE            "Voz inexistente!\nPretende criar uma nova voz?"
+    IDS_NEWSALESMAN         "Vendedor inexistente!\nPretende criar um novo vendedor?"
+    IDS_SPONSORALLREADYEXISTS "O Spot já costa da lista de patrocinios!"
+    IDS_CONFIRMREMOVERECORDINGTASK 
+                            "Tem a certeza que pretende apagar a ordem de gravação?"
+    IDS_CONFIRMRECORDING    "Nada"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Gestão Comercial"
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RADIOSTATION DIALOG  0, 0, 326, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selecione la Estación de Radio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,92,50,14
+    LISTBOX         IDC_LIST2,7,7,312,80,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_RECORDINGTASK DIALOG  0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Orden de grabación"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,381,374,50,14
+    EDITTEXT        IDC_TASKNAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TALENT,110,7,379,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_TASKDEADLINE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,36,100,15
+    EDITTEXT        IDC_TASK,110,62,379,306,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Locutor:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Descrición:",IDC_STATIC,7,21,93,14,SS_CENTERIMAGE
+    RTEXT           "Fecha limite:",IDC_STATIC,7,36,93,15,SS_CENTERIMAGE
+    RTEXT           "Instrucciones:",IDC_STATIC,7,62,93,15,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_BLOCKS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selección de los bloques donde calendarizar la publicidad"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_BLOCKS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,146
+    CONTROL         "List1",IDC_SELECTED,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,156,334,150
+    PUSHBUTTON      "Eliminar",IDC_BUTTON1,7,313,50,14
+END
+
+IDD_SCHEDULE_CLOCKS_DETAIL DIALOG  0, 0, 381, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definición de la entrada de publicidad en el bloque"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,324,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,264,265,50,14
+    EDITTEXT        IDC_NAME,108,7,266,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker1",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,23,100,15
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,39,100,15
+    CONTROL         "Dom",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,57,31,10
+    CONTROL         "Lun ",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,57,30,10
+    CONTROL         "Mar",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,57,28,10
+    CONTROL         "Mi",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,57,23,10
+    CONTROL         "Ju",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,57,23,10
+    CONTROL         "Vi",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,57,22,10
+    CONTROL         "Sab",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,339,57,29,10
+    CONTROL         "Tree1",IDC_BLOCKTREE,"SysTreeView32",TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,108,74,266,186
+    RTEXT           "Nombre del Bloque:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    RTEXT           "Fecha de entrada en el Bloque:",IDC_STATIC,7,23,93,15,SS_CENTERIMAGE
+    RTEXT           "Fecha de salida del bloque:",IDC_STATIC,7,39,93,15,SS_CENTERIMAGE
+    RTEXT           "Dias para Emisión en el bloque:",IDC_STATIC,7,57,93,10,SS_CENTERIMAGE
+    RTEXT           "Posición en el bloque:",IDC_STATIC,7,74,93,10,SS_CENTERIMAGE
+END
+
+IDD_SCHEDULE_MAIN DIALOGEX 0, 0, 348, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calendarización"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,63,69,16
+    GROUPBOX        "Inicio",IDC_STATIC,7,51,334,32
+    RTEXT           "Fecha",IDC_STATIC,13,63,44,16,SS_CENTERIMAGE
+    RTEXT           "Hora",IDC_STATIC,145,67,36,8
+    CONTROL         "DateTimePicker3",IDC_STARTINGHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | WS_TABSTOP | 0x8,189,64,69,15
+    GROUPBOX        "Fin",IDC_STATIC,7,84,334,52
+    CONTROL         "DateTimePicker2",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,72,95,69,16
+    CONTROL         "DateTimePicker3",IDC_FINALHOUR,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,189,95,69,15
+    LTEXT           "Hora Final",IDC_STATIC,151,99,33,8
+    EDITTEXT        IDC_NUMBER,72,116,69,14,ES_AUTOHSCROLL
+    CONTROL         "Por Fecha",IDC_BYDATE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_NOTIFY,13,95,48,16
+    CONTROL         "Por Número",IDC_BYNUMBER,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,116,48,14
+    RTEXT           "Radio:",IDC_STATIC,17,15,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_RADIOSTATION,72,15,182,93,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Cliente:",IDC_STATIC,17,31,44,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_CUSTOMER,72,31,264,89,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valor",IDC_STATIC,7,140,334,55
+    GROUPBOX        "",IDC_STATIC,7,7,334,43
+    CONTROL         "Por Inserción",IDC_BYINSERT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,152,48,14
+    CONTROL         "Por Contrato",IDC_BYCONTRACT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,170,48,14
+    EDITTEXT        IDC_VALUE,189,153,69,14,ES_AUTOHSCROLL
+    RTEXT           "Valor",IDC_STATIC,147,153,35,14,SS_CENTERIMAGE
+    RTEXT           "PI:",IDC_STATIC,260,15,18,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PI,279,15,56,14,ES_AUTOHSCROLL
+END
+
+IDD_SCHEDULE_SPOTS DIALOG  0, 0, 348, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selección de spots para calendarizar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SPOTS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,334,129
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,142,334,168
+    PUSHBUTTON      "Eliminar",IDC_BUTTON1,7,313,57,14
+    PUSHBUTTON      "Adelantar",IDC_BUTTON2,68,313,50,14
+    PUSHBUTTON      "Retrasar",IDC_BUTTON3,121,313,50,14
+END
+
+IDD_SCHEDULE_SPOTS_DETAIL DIALOG  0, 0, 377, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametros para emisión del spot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,320,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,82,50,14
+    EDITTEXT        IDC_NAME,111,7,259,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker2",IDC_STARTINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,24,100,15
+    CONTROL         "DateTimePicker3",IDC_ENDINGDATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,111,42,100,15
+    CONTROL         "Dom",IDC_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,63,31,10
+    CONTROL         "Lun",IDC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,63,28,10
+    CONTROL         "Mar",IDC_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,63,28,10
+    CONTROL         "Mi",IDC_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,63,23,10
+    CONTROL         "Ju",IDC_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,63,23,10
+    CONTROL         "Vi",IDC_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,299,63,22,10
+    CONTROL         "Sab",IDC_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,63,29,10
+    RTEXT           "Nombre del Spot:",IDC_STATIC,7,7,96,14,SS_CENTERIMAGE
+    RTEXT           "Inicio de emisión:",IDC_STATIC,7,24,96,14,SS_CENTERIMAGE
+    RTEXT           "Fin de emisión:",IDC_STATIC,7,42,96,14,SS_CENTERIMAGE
+    RTEXT           "Días de emisión:",IDC_STATIC,7,63,96,10,SS_CENTERIMAGE
+END
+
+IDD_SPONSOR DIALOG  0, 0, 362, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definición del plazo de patrocinio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,76,50,14
+    RTEXT           "Cliente:",IDC_STATIC,7,7,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CUSTOMER,110,7,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Nombre del Spot:",IDC_STATIC,7,22,93,14,SS_CENTERIMAGE
+    RTEXT           "Cliente:",IDC_STATIC,7,23,93,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPOTNAME,110,22,245,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Fecha de inicio:",IDC_STATIC,7,38,93,14,SS_CENTERIMAGE
+    RTEXT           "Fecha final:",IDC_STATIC,7,55,93,14,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_STARTINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,38,100,15
+    CONTROL         "DateTimePicker1",IDC_SPONSOR_ENDINGDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,110,55,100,15
+END
+
+IDD_SPOT DIALOGEX 0, 0, 496, 395
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ficha del Spot"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_CUSTOMER,110,7,379,242,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,110,21,379,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_BUSINESS,110,36,379,219,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AGENCY,110,50,379,241,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VOICE,110,64,379,216,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PATH,110,95,379,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILENAME,110,109,379,229,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OBS,110,126,379,63,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,439,374,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,383,374,50,14
+    RTEXT           "Cliente:",IDC_STATIC,7,7,93,12,SS_CENTERIMAGE
+    RTEXT           "Nombre del Spot:",IDC_STATIC,7,21,93,12,SS_CENTERIMAGE
+    RTEXT           "Tipo de producto:",IDC_STATIC,7,36,93,12,SS_CENTERIMAGE
+    RTEXT           "Agencia:",IDC_STATIC,7,50,93,12,SS_CENTERIMAGE
+    RTEXT           "Voz principal:",IDC_STATIC,7,64,93,12,SS_CENTERIMAGE
+    RTEXT           "Observaciones:",IDC_STATIC,7,126,93,12,SS_CENTERIMAGE
+    RTEXT           "Localización",IDC_STATIC,7,95,93,12,SS_CENTERIMAGE
+    RTEXT           "Archivo Audio:",IDC_STATIC,7,109,93,12,SS_CENTERIMAGE
+    RTEXT           "Duração Padrão:",IDC_STATIC,7,78,93,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_STANDARDLENGTH,110,78,53,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_RADIOSTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_RECORDINGTASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+
+    IDD_SCHEDULE_BLOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_CLOCKS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        VERTGUIDE, 100
+        VERTGUIDE, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SCHEDULE_MAIN, DIALOG
+    BEGIN
+        VERTGUIDE, 13
+        VERTGUIDE, 61
+    END
+
+    IDD_SCHEDULE_SPOTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_SCHEDULE_SPOTS_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        VERTGUIDE, 103
+        VERTGUIDE, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SPONSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SPOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        VERTGUIDE, 439
+        VERTGUIDE, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Publicidad"
+    BEGIN
+        MENUITEM "Gestión de &Publicidad",      ID_TRAFFIC
+        MENUITEM "Publicidad en &Emisión",      ID_ONAIR_TRAFFIC
+        MENUITEM SEPARATOR
+        MENUITEM "Orde de Grabación",           ID_RECORDINGTASK
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "&Barra de Estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Alinear en Vertical",         ID_VIEW_VERTICAL
+        MENUITEM "Alinear en Horizontal",       ID_VIEW_HORIZONTAL
+    END
+    POPUP "&Ayuda"
+    BEGIN
+        MENUITEM "Ayuda",                       ID_HELP_HELP
+        MENUITEM "Acerca de Traffic...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_TRAFFIC              "Gestión de publicidad"
+    ID_VIEW_AGENCY          "Mostrar publicidad por agencia"
+    ID_VIEW_SALESMAN        "Mostrar publicidad segun el Comercial"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Mostrar la barra de estado"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Digital Broadcaster 2006"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOL_NEWSPOT        "Nuevo Spot"
+    IDS_TOOL_EDIT           "Editar"
+    IDS_TOOL_CUT            "Eliminar"
+    IDS_TOOL_NEWTRAFFICSCHEDULE "Nueva Calendarización"
+    IDS_TOOL_QUERYBLOCKS    "Busqueda de Bloques"
+    IDS_TOOL_NEWSOUND       "Nueva Grabación"
+    IDS_TOOL_PFL            "Monitor"
+    IDS_TOOL_NEWRM          "Nueva RM"
+    IDS_TOOL_NEWTEXT        "Nuevo Texto"
+    IDS_TOOL_NEWLINEUP      "Nuevo Alineamiento"
+    IDS_TOOL_TRAFFICLIST    "Lista Global"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRAFFICSCHEDULE     "* Calendarizaciones"
+    IDS_CUSTOMERSPOTS       "Spots del Cliente"
+    IDS_SPOTSTOSCHEDULE     "Spots para calendarizar"
+    IDS_AIRINGPERIOD        "Periodo de emisión"
+    IDS_AIRINGDAYS          "Días de emisión"
+    IDS_SUN                 "Dom"
+    IDS_MON                 "Lun"
+    IDS_TUE                 "Mar"
+    IDS_WED                 "Mi"
+    IDS_THU                 "Ju"
+    IDS_FRI                 "Vi"
+    IDS_SAT                 "Sab"
+    IDS_BLOCKS              "Bloques de publicidade"
+    IDS_SELECTEDBLOCKS      "Bloques Seleccionados"
+    IDS_POSITION            "Posición"
+    IDS_SPOTSNUMBER         "Nº Spots"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_FROMTO       "de %d-%d-%d a %d-%d-%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SPOTSLENGTH         "Duración"
+    IDS_BLOCK               "Bloque de publicidad"
+    IDS_EMPTYSLOT           "Posición Libre"
+    IDS_REFRESH             "* Actualizar"
+    IDS_SPONSORS            "Patrocinios"
+    IDS_RECORDINGS          "Ordenes de grabación"
+    IDS_VOICEINSERT         "Take de locución"
+    IDS_TIMESIGNAL          "Señal horaria"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENUSTART           "Inicio"
+    IDS_MENUFADEIN          "Fade In"
+    IDS_MENUINTRO           "Intro"
+    IDS_MENUFADEOUT         "Fade Out"
+    IDS_MENUMIX             "Mix"
+    IDS_MENUEND             "Fin"
+    IDS_MENULOOPA           "Loop A"
+    IDS_MENULOOPB           "Loop B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIRMSCHEDULEREMOVE 
+                            "¿Está seguro de querer eliminar esta calendarización?"
+    IDS_CONFIRMSPONSORREMOVE 
+                            "¿Está seguro de querer eliminar este patrocinio?\nEn caso afirmativo, el spot dejará de estar disponible en la emisión, pero continuará disponible en la gestión de publicidad."
+    IDS_CANTDELETECUSTOMER  "¡Sólo podra eliminar un cliente después de eliminar todos sus spots!"
+    IDS_CONFIRMCUSTOMERREMOVE "¿Está seguro de eliminar la ficha del cliente?"
+    IDS_CONFIRMSPOTREMOVE   "¿Está seguro de querer eliminar este spot?\nEn caso afirmativo, el spot será eliminado de la base de datos y su respectivo audio marcado para una posterior eliminación."
+    IDS_NEWCUSTOMER         "¡Cliente inexistente!\n¿Desea crear un nuevo cliente?"
+    IDS_NEWBUSINESS         "¡Actividad inexistente!\n¿Desea crear una nueva actividad?"
+    IDS_NEWAGENCY           "¡Agencia inexistente!\n¿Desea crear una nueva agencia?"
+    IDS_NEWVOICE            "¡Voz inexistente!\n¿Desea crear una nueva voz?"
+    IDS_NEWSALESMAN         "¡Vendedor inexistente!\n¿Desea crear un nuevo vendedor?"
+    IDS_SPONSORALLREADYEXISTS 
+                            "¡El Spot ya forma parte de la  lista de patrocinios!"
+    IDS_CONFIRMREMOVERECORDINGTASK 
+                            "¿Está seguro de querer eliminar la orden de grabación?"
+    IDS_CONFIRMRECORDING    " "
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Gestión Comercial"
+END
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Traffic.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
