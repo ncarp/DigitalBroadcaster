@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Computers] (
+    [ID]      INT              IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [Name]    CHAR (100)       NULL,
+    [rowguid] UNIQUEIDENTIFIER DEFAULT (newid()) ROWGUIDCOL NOT NULL,
+    CONSTRAINT [PK_Computers] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [index_82099333]
+    ON [dbo].[Computers]([rowguid] ASC) WITH (FILLFACTOR = 90);
+
