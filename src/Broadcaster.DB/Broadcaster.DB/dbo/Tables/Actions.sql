@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Actions] (
+    [ID]     INT       IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [Action] CHAR (50) NULL,
+    CONSTRAINT [PK_Actions] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

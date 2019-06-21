@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Broadcaster.DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ac05b64d-a8c8-4d38-ab32-255554713afd}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Broadcaster.DB</RootNamespace>
+    <AssemblyName>Broadcaster.DB</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\TrafficScheduleDefinition.sql" />
+    <Build Include="dbo\Tables\TypeOfBusiness.sql" />
+    <Build Include="dbo\Tables\TypeOfJingle.sql" />
+    <Build Include="dbo\Tables\TypeOfRM.sql" />
+    <Build Include="dbo\Tables\Voices.sql" />
+    <Build Include="dbo\Tables\Customers.sql" />
+    <Build Include="dbo\Tables\ElementType.sql" />
+    <Build Include="dbo\Tables\Agency.sql" />
+    <Build Include="dbo\Tables\Artists.sql" />
+    <Build Include="dbo\Tables\Categories.sql" />
+    <Build Include="dbo\Tables\Computers.sql" />
+    <Build Include="dbo\Tables\Actions.sql" />
+    <Build Include="dbo\Tables\HD.sql" />
+    <Build Include="dbo\Tables\Jingles.sql" />
+    <Build Include="dbo\Tables\TrafficScheduleBlocks.sql" />
+    <Build Include="dbo\Tables\TrafficScheduleSpots.sql" />
+    <Build Include="dbo\Tables\Languages.sql" />
+    <Build Include="dbo\Tables\Log.sql" />
+    <Build Include="dbo\Tables\MusicTracks.sql" />
+    <Build Include="dbo\Tables\Spots.sql" />
+    <Build Include="dbo\Tables\Nationalities.sql" />
+    <Build Include="dbo\Tables\News.sql" />
+    <Build Include="dbo\Tables\OnAirUser.sql" />
+    <Build Include="dbo\Tables\RadioStations.sql" />
+    <Build Include="dbo\Tables\RecordingTask.sql" />
+    <Build Include="dbo\Tables\RecordingVersion.sql" />
+    <Build Include="dbo\Tables\RecordLabel.sql" />
+    <Build Include="dbo\Tables\Records.sql" />
+    <Build Include="dbo\Tables\RMs.sql" />
+    <Build Include="dbo\Tables\Salesperson.sql" />
+    <Build Include="dbo\Tables\SystemUsers.sql" />
+    <Build Include="dbo\Tables\Time.sql" />
+    <Build Include="dbo\Views\ViewArtistFull.sql" />
+    <Build Include="dbo\Views\ViewDiscography.sql" />
+    <Build Include="dbo\Views\ViewEditedMusicFiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewLogMusic.sql" />
+    <Build Include="dbo\Views\ViewMusicData_Playing.sql" />
+    <Build Include="dbo\Views\ViewMusicFull.sql" />
+    <Build Include="dbo\Views\ViewRecords.sql" />
+    <Build Include="dbo\Views\ViewMusicStatCategories.sql" />
+    <Build Include="dbo\Views\ViewJingleFiles.sql" />
+    <Build Include="dbo\Views\ViewJinglesData_OnAir.sql" />
+    <Build Include="dbo\Views\ViewRecordings.sql" />
+    <Build Include="dbo\Views\ViewRMFiles.sql" />
+    <Build Include="dbo\Views\ViewSpotFull.sql" />
+    <Build Include="dbo\Views\ViewTimeSignal.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewSpotFiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewSpotOnAirData.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewRMs.sql" />
+    <Build Include="dbo\Views\ViewSpotInfo.sql" />
+    <Build Include="dbo\Views\ViewJinglesSmallList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewJinglesList.sql" />
+    <Build Include="dbo\Views\ViewTrafficScheduleSpots.sql" />
+    <Build Include="dbo\Views\ViewMusicStatLanguage.sql" />
+    <Build Include="dbo\Views\ViewSpotsSmallList.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewSpotsList.sql" />
+    <Build Include="dbo\Views\ViewNews.sql" />
+    <Build Include="dbo\Views\ViewNewsList.sql" />
+    <Build Include="dbo\Views\ViewRecordingTasks.sql" />
+    <Build Include="dbo\Views\ViewRecordingTasksSmall.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\ViewTrafficSchedule.sql" />
+    <Build Include="dbo\Views\ViewCustomersFull.sql" />
+    <Build Include="dbo\Views\ViewCustomersNameAndID.sql" />
+    <Build Include="dbo\Stored Procedures\LanguageAdd.sql" />
+    <Build Include="dbo\Stored Procedures\MusicTrackAdd.sql" />
+    <Build Include="dbo\Stored Procedures\ArtistAdd.sql" />
+    <Build Include="dbo\Stored Procedures\CategoryAdd.sql" />
+  </ItemGroup>
+</Project>
